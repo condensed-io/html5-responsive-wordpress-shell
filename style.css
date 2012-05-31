@@ -1,0 +1,294 @@
+/*
+Theme Name: html5 shell by mimoYmima.com
+Theme URI: http://html5.mimoymima.com/
+Description: a Framework for rapidly developing HTML5 based WordPress Themes
+Version: 1.53
+Author: Brent Lagerman
+Author URI: http://mimoymima.com/
+*/
+
+/*
+	mYm6 - updated: May 13, 2012 - brent@mimoymima.com
+	
+	* added styling for html code back in, it got removed when we merged the basic.css sheet into style.css
+	* added a function to functions.php to make it so if you're logged into admin area you see the template that each page is using at the top of the page
+	* adding in missing php reference after one of the code starts which was causing an issue on some servers
+
+	--- Color References ---
+	link blue: #39C;
+	background: #XXXXXX;
+*/
+
+
+
+/*--------------------------------------------------------------------------------------------------*/
+/* GENERAL STYLES - These defaults aren't site specific so you don't probably need to change them */
+/* add your styles in the BASE STYLING section below */
+/*--------------------------------------------------------------------------------------------------*/
+
+	/*--- RESET by normalize.css 2011-11-04T15:38 UTC - http://github.com/necolas/normalize.css ---*/
+	article,aside,details,figcaption,figure,footer,header,hgroup,nav,section{display:block}audio,canvas,video{display:inline-block;*display:inline;*zoom:1}audio:not([controls]){display:none}[hidden]{display:none}html{font-size:100%;overflow-y:scroll;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%}body{margin:0}body,button,input,select,textarea{font-family:sans-serif}a:focus{outline:thin dotted}a:hover,a:active{outline:0}h1{font-size:2em}abbr[title]{border-bottom:1px dotted}b,strong{font-weight:bold}blockquote{margin:1em 40px}dfn{font-style:italic}mark{background:#ff0;color:#000}pre,code,kbd,samp{font-family:monospace,serif;_font-family:'courier new',monospace;font-size:1em}pre{white-space:pre;white-space:pre-wrap;word-wrap:break-word}q{quotes:none}q:before,q:after{content:'';content:none}small{font-size:75%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sup{top:-0.5em}sub{bottom:-0.25em}ul,ol{margin-left:0;padding:0 0 0 40px}dd{margin:0 0 0 40px}nav ul,nav ol{list-style:none;list-style-image:none}img{border:0;-ms-interpolation-mode:bicubic}svg:not(:root){overflow:hidden}figure{margin:0}form{margin:0}fieldset{border:1px solid #c0c0c0;margin:0 2px;padding:.35em .625em .75em}legend{border:0;*margin-left:-7px}button,input,select,textarea{font-size:100%;margin:0;vertical-align:baseline;*vertical-align:middle}button,input{line-height:normal}button,input[type="button"],input[type="reset"],input[type="submit"]{cursor:pointer;-webkit-appearance:button;*overflow:visible}input[type="checkbox"],input[type="radio"]{box-sizing:border-box;padding:0}input[type="search"]{-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box}input[type="search"]::-webkit-search-decoration{-webkit-appearance:none}button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}textarea{overflow:auto;vertical-align:top}table{border-collapse:collapse;border-spacing:0}
+
+	/*--- TEXT ---*/
+		
+		/* Font stacks - some premade stacks you could use, by default we're using the sans stack in the 'base styling' section below */
+		.serif { font-family: Baskerville, Palatino, "Palatino Linotype", "Hoefler Text", "Times New Roman", times, serif; } /*cambria, cochin ??*/
+		.monospace { font-family: 'courier new', courier, Consolas, Menlo, Monaco, 'Lucida Console', 'Liberation Mono', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', monospace; }
+		.sans { font-family: 'Helvetica Neue', helvetica, sans-serif; }
+		
+	/*--- CODE ---*/
+		code { background-color: #2A410B !important; font-family: 'Andale Mono', 'Lucida Console', "courier new", courier, monospace; background-color: #069; color: #FFF; padding: .5em; -moz-border-radius: 5px; -khtml-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px; }
+		pre code { line-height: 130%; display: block; padding: 1em; margin: 2em 0; overflow: auto; }
+		pre { margin: 1em; }
+
+	/*--- FORMS ---*/
+		#search-form input[type='text'] { width: 10em; }
+
+	/*--- LISTS ---*/
+	
+		/* .no-bullet: list without bullets */
+		.no-bullet { list-style-type: none; margin-bottom: 2em; }
+		.no-bullet li { margin-bottom: .5em; }
+
+		/* .bullet-list: nicer formatting for a bulleted list */
+		.bullet-list { margin: 1em 0 2em 0; line-height: 150%; }
+		.bullet-list li { margin: 0 2em 1em 2em; list-style-type: square; }
+		.bullet-list li ul { margin: .5em 0 1.5em 0; }
+		.bullet-list li ul li { list-style-type: circle; margin: 0 2em .5em 2em; }
+
+		/* .horiz-list: Used to put a list inline (horizontal) and get rid of the bullets */
+		.horiz-list ul { float: left; list-style-type: none; }
+		.horiz-list li { float: left; display: inline; }
+		.horiz-list li a { display: block; float: left; width: auto;  }
+
+		/* .link-list */
+		.link-list li { list-style-type: none; }
+		li.link-list a, ul.link-list li a { display: block; background: url(./images/icon_link_arrow.png) 0px 8px no-repeat; padding-left: 20px; margin-left: 20px;  }
+	
+		/* .pdf-list */
+		.pdf-link { padding-left: 20px; margin-left: 5px; }
+		.pdf-list li { list-style-type: none; }
+		li.pdf-list a, ul.pdf-list li a { display: block; background: url(./images/icon_pdf_sm.png) 0 3px no-repeat; padding-left: 20px; margin-left: 20px; }
+	
+	/*--- UTILITY ---*/
+
+		/* Clear Fixes - two methods, clear-fix is attached to the element you want to clear, .clear-all you can attach to a hr or br tag to clear the item before it as a last resort when you're in a hurry */
+		.clear-fix { display: inline-block; } /* This needs to be first because FF3 is now supporting this */
+		.clear-fix:after { content: " "; display: block; height: 0; clear: both; font-size: 0; visibility: hidden; }
+		.clear-all { visibility: hidden; clear: both; margin: 0 !important; padding: 0 !important; font-size: 0; height: 1px; }
+			/* TODO: might try this one instead one day: http://nicolasgallagher.com/micro-clearfix-hack */
+
+		/* WordPress WYSIWYG alignment -- when you put in images that span the entire width of the content area remove the width and height */
+		img.aligncenter { max-width: 100%; display: block; margin: 5px auto; }
+	    img.alignright { padding: 4px; margin: 0 0 2px 7px; display: inline; }
+	    img.alignleft { padding: 4px; margin: 0 7px 2px 0; display: inline; }
+	    .alignright { float: right; }
+		.alignleft { float: left; }
+		
+		/* Warnings */
+		.sys { text-align: left }
+		.warn {}
+
+	/*--- JQUERY RELATED --- */
+
+		/* PRELOADER: Relies on some js in the functions file and a div in the header (both commented out by default) */
+		/*.js div#preloader { position: fixed; left: 0; top: 0; z-index: 999; width: 100%; height: 100%; overflow: visible; background: #c0c0c0 url(./images/loading.gif) no-repeat center center; }*/
+
+		/* Show-Hide Content */
+		.make-link { color: #06F !important; text-decoration: none; margin-bottom: .5em; } 
+		.make-link:hover, .make-link:focus, .make-link:active { cursor: pointer; color: #C60; text-decoration: underline; }
+		ul.hide { margin: 0 0 0 1em !important; padding: 0 !important; }
+
+			/* Adds 'Plus-Minus' sign to header */
+			.header-shown { background: url('./images/icon_link_plus_minus.png') no-repeat 0 -20px; height: 17px; }
+			.header-hidden { background: url('./images/icon_link_plus_minus.png') no-repeat 0px 3px; height: -14px; }
+
+		/* Indicators */
+		.indicator { position: absolute; z-index: 100; text-align: right; left: 0; }
+		.indicator a { width: 7em; background-color: #FF0; display: block; font-weight: bold; font-size: 12px !important; text-transform: uppercase; text-decoration: none; padding: .5em 1em; }
+		.indicator a:link, .indicator a:visited { color: black; }
+		.indicator a:hover, .indicator a:focus, .indicator a:active { color: black; background-color: #FFF; text-decoration: none; cursor: pointer; }
+		#js-ind { top: 20em; }
+	
+		/* Hide these items when Javascript is active */
+		.js #js-ind, .js .hide { display: none; }
+
+
+
+/*--------------------------------------------------------------------------------------------------*/
+/* BASE STYLING: sytle 320px first and go up from there using media query areas below */
+/*--------------------------------------------------------------------------------------------------*/
+
+
+	/*--- SITE WIDE ---*/
+	
+		/* LOAD FONTS */
+		@font-face { font-family: 'StMarieThin'; src: url('./fonts/StMarie-Thin-webfont.eot'); src: url('./fonts/StMarie-Thin-webfont.eot?#iefix') format('embedded-opentype'), url('./fonts/StMarie-Thin-webfont.woff') format('woff'), url('./fonts/StMarie-Thin-webfont.ttf') format('truetype'), url('./fonts/StMarie-Thin-webfont.svg#StMarieThin') format('svg'); font-weight: normal; font-style: normal; }
+
+		/* Set the background and font color for the html and body, if you don't have a different bkg for the body set both to be the same */
+		html { background: #FFF; color: #333; }
+		body { background: #FFF; color: #333; }
+
+		/* Sets font family, size, width, and margins for the page */
+		body { text-align: center; font-size: 14px; font-weight: 300; line-height: 150%; font-family: 'Helvetica Neue', helvetica, sans-serif; }
+	
+		/* Headings */
+		h1, h2, h3, h4, h5, h6 { font-weight: 500; font-family: 'StMarieThin', 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', helvetica, sans-serif; }
+
+		/* Links */
+		a:link, a:visited { color: #39C; text-decoration: underline; }
+		a:hover, a:active, a:focus { color: #F90; text-decoration: none; }
+	
+		/* Hide These Elements but keep them accessible */
+		#accessibility, #footer .vcard, nav h1 { position: absolute; left: -999em; }
+
+		/* page-wrapper */
+		#page-wrapper { }
+	
+	
+	/*--- HEADER ---*/
+	
+		#site-header #site-title { }
+		#site-header #site-description {  }	
+
+		/* Nav */
+		#main-nav a { font-size: 1.2em; text-decoration: none; display: inline-block; line-height: 1.8em; margin: 0 3px 3px 0; padding: 1em 2em; -moz-border-radius: 10px; -khtml-border-radius: 10px; -webkit-border-radius: 10px; border-radius: 10px; }
+	
+		/* Nav Links*/
+		#main-nav a:link, #main-nav a:visited  { color: #08BDE6; background: #CAF3FF; }
+		#main-nav a:hover, #main-nav a:active, #main-nav a:focus { color: #00A5CB; background: #95E8FF; text-decoration: underline; }
+
+		/* DownStates*/
+		#main-nav .current_page_item a { color: #C63 !important; background: #FFED66; cursor: default; }
+	
+		
+	/*--- CONTENT AREA ---*/
+	
+		#content { }
+		#content em { font-family: baskerville, cambria, cochin, "Palatino Linotype", "Book Antiqua", Palatino, "Times New Roman", serif; }	
+		
+		/* Page */
+		.page {}
+
+		/* Single */
+		.single {}
+
+		/* Comments using Intense Debate */			
+	
+	
+	/*--- SIDEBAR ~ MAIN ---*/
+
+		#main-sidebar ul { list-style-position: inside; }
+	
+	
+	/*--- SIDEBAR ~ FOOTER ---*/
+
+		#footer-sidebar ul { list-style-position: inside; }
+
+
+	/*--- FOOTER ---*/
+
+		#footer { clear: both; padding-bottom: 20px; text-align: right; }
+			
+		/* Credit */
+		#footer #mym-credit { font-size: .9em; clear: both; }
+		#footer #mym-credit a { letter-spacing: 1px; }
+		#footer #mym-credit a#cred:link, #footer #mym-credit a#cred:visited { text-decoration: none; color: #39C; }
+
+
+
+/*--------------------------------------------------------------------------------------------------*/
+/* Specific Page Styles */
+/*--------------------------------------------------------------------------------------------------*/
+
+	/*--- style the 503 page (coming soon page) you activate this template file in the maintenance mode plugin ---*/
+	.maintenance {}
+
+	/*--- home ---*/
+	#home {}
+
+	/*--- about ---*/
+	#about {}
+
+
+
+/*--------------------------------------------------------------------------------------------------*/
+/* 480 media query */
+/*--------------------------------------------------------------------------------------------------*/
+
+@media screen and (min-width: 480px) and (max-width: 600px) {
+	
+	/* For reference, delete later*/
+	body:before { content: "480-600"; left: 1em; position: absolute; top: 1em; z-index: 999; }
+
+	.row { width: 480px; }
+
+	/* add your styles here */
+
+}
+
+
+/*--------------------------------------------------------------------------------------------------*/
+/* 600 media query */
+/*--------------------------------------------------------------------------------------------------*/
+
+@media screen and (min-width: 600px) and (max-width: 750px) {
+
+	/* For reference, delete later*/
+	body:before { content: "600-750"; left: 1em; position: absolute; top: 1em; z-index: 999; }
+
+	.row { width: 600px; }
+
+	/* add your styles here */
+
+}
+
+
+/*--------------------------------------------------------------------------------------------------*/
+/* 750 media query */
+/*--------------------------------------------------------------------------------------------------*/
+
+@media screen and (min-width: 750px) and (max-width: 980px) {
+
+	/* For reference, delete later*/
+	body:before { content: "750-980"; left: 1em; position: absolute; top: 1em; z-index: 999; }
+
+	.row { width: 750px; }
+
+	/* add your styles here */
+
+}
+
+
+
+/*--------------------------------------------------------------------------------------------------*/
+/* 980 media query */
+/*--------------------------------------------------------------------------------------------------*/
+
+@media screen and (min-width: 980px) and (max-width: 1200px) {
+
+	/* For reference, delete later*/
+	body:before { content: "980-1200"; left: 1em; position: absolute; top: 1em; z-index: 999; }
+
+	.row { width: 980px; }
+
+	/* add your styles here */
+
+}
+
+
+
+/*--------------------------------------------------------------------------------------------------*/
+/* 1200 media query */
+/*--------------------------------------------------------------------------------------------------*/
+
+@media screen and (min-width: 1200px) {
+
+	/* For reference, delete later*/
+	body:before { content: "1200 and up"; left: 1em; position: absolute; top: 1em; z-index: 999; }
+
+	.row { width: 1200px; }
+
+	/* add your styles here */
+
+}

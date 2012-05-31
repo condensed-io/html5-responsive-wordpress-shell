@@ -1,0 +1,3 @@
+/* you can feed css just to the iphone with this stylesheet */
+
+.iPhoneHide { position: absolute !important; left: -999em !important; }
