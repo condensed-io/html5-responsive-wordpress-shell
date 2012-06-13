@@ -48,8 +48,8 @@ remove_action('wp_head', 'wp_generator');
 
 // Wigetized sidebar, we're registering two, you can add as many as you want
 	if ( function_exists('register_sidebar') )
-		register_sidebar(array('name'=>'Main Sidebar', 'id' => 'main-sidebar'));
-		register_sidebar(array('name'=>'Footer Sidebar', 'id' => 'footer-sidebar'));
+		register_sidebar(array('name'=>'Sidebar - Main', 'id' => 'sidebar-main'));
+//		register_sidebar(array('name'=>'Sidebar - Footer', 'id' => 'sidebar-footer')); // you can register more by putting them on their own lines
 
 
 // This function is used to get the slug of the page

@@ -1,5 +1,21 @@
 <?php get_header(); ?>
 
+<!--BEGIN: sidebar~main-->
+<?php // to disable this sidebar on a page by page basis just add a custom field to your page or post of disableSidebarMain = true
+$disableSidebarMain = get_post_meta($post->ID, 'disableSidebarMain', $single = true);
+if ($disableSidebarMain !== 'true'): ?>
+
+<aside id="sidebar-main">
+	<h1>Main Sidebar</h1>
+	<ul>
+		<?php dynamic_sidebar('sidebar-main'); ?>
+	</ul>
+</aside>
+
+<?php endif; ?>
+<!--END: sidebar~main-->
+
+
 <div id="content" class="clear-fix" role="main">
 	
 	<?php if (have_posts()) : while (have_posts()) : the_post(); //BEGIN: The Loop ?>
@@ -48,19 +64,5 @@
 	
 </div>
 <!--END: Content div-->
-
-<!--BEGIN: Main Sidebar-->
-<?php // to disable this sidebar on a page by page basis just add a custom field to your page or post of disableSidebarLeft = true
-$disableSidebarMain = get_post_meta($post->ID, 'disableSidebarMain', $single = true);
-if ($disableSidebarMain !== 'true'): ?>
-
-<aside id="sidebar-main">
-	<ul>
-		<?php dynamic_sidebar('main-sidebar'); ?>
-	</ul>
-</aside>
-
-<?php endif; ?>
-<!--END: Main Sidebar-->
 
 <?php get_footer(); ?>
