@@ -8,7 +8,7 @@ Author URI: http://mimoymima.com/
 */
 
 /*
-	mYm6 - updated: May 13, 2012 - brent@mimoymima.com
+	mYm6 - updated: June 13, 2012 - brent@mimoymima.com
 	
 	* added styling for html code back in, it got removed when we merged the basic.css sheet into style.css
 	* added a function to functions.php to make it so if you're logged into admin area you see the template that each page is using at the top of the page
@@ -140,7 +140,7 @@ Author URI: http://mimoymima.com/
 		a:hover, a:active, a:focus { color: #F90; text-decoration: none; }
 	
 		/* Hide These Elements but keep them accessible */
-		#accessibility, #footer .vcard, nav h1 { position: absolute; left: -999em; }
+		#accessibility, #footer .vcard, nav h1, #sidebar-main h1 { position: absolute; left: -999em; }
 
 		/* page-wrapper */
 		#page-wrapper { }
