@@ -121,7 +121,5 @@ $ipad = strpos($_SERVER['HTTP_USER_AGENT'],"iPad");
 
 		<nav id="main-nav" role="navigation">
 			<h1>Main Navigation</h1>
-			<ul class="horiz-list">
-				<?php wp_nav_menu('menu=mainNav'); // create the mainNav menu inside Appearance menus and go to town -- for more on menus see: http://templatic.com/news/wordpress-3-0-menu-management ?>
-			</ul>
+			<?php wp_nav_menu('menu=mainNav'); // create the mainNav menu inside Appearance menus and go to town -- for more on menus see: http://templatic.com/news/wordpress-3-0-menu-management ?>
 		</nav>
