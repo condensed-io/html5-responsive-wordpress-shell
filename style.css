@@ -10,10 +10,6 @@ Author URI: http://mimoymima.com/
 /*
 	mYm6 - updated: June 13, 2012 - brent@mimoymima.com
 	
-	* added styling for html code back in, it got removed when we merged the basic.css sheet into style.css
-	* added a function to functions.php to make it so if you're logged into admin area you see the template that each page is using at the top of the page
-	* adding in missing php reference after one of the code starts which was causing an issue on some servers
-
 	--- Color References ---
 	link blue: #39C;
 	background: #XXXXXX;
