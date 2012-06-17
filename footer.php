@@ -3,7 +3,7 @@
 
 	<!--BEGIN: Footer Nav-->
 	<nav role="navigation">
-		<h1>Footer Navigation</h1>
+		<h1 class="access-hide">Footer Navigation</h1>
 		<ul class="horiz-list">
 			<?php wp_nav_menu('menu=footerNav'); // create the footerNav menu inside Appearance menus and go to town -- for more on menus see: http://templatic.com/news/wordpress-3-0-menu-management ?>
 		</ul>

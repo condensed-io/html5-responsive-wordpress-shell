@@ -136,7 +136,7 @@ Author URI: http://mimoymima.com/
 		a:hover, a:active, a:focus { color: #F90; text-decoration: none; }
 	
 		/* Hide These Elements but keep them accessible */
-		#accessibility, #footer .vcard, nav h1, #sidebar-main h1 { position: absolute; left: -999em; }
+		.access-hide { position: absolute; left: -999em; }
 
 		/* page-wrapper */
 		#page-wrapper { }

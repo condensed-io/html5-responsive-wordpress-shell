@@ -17,6 +17,8 @@ if ($disableSidebarMain !== 'true'): ?>
 
 <!--BEGIN: content div-->
 <div id="content" class="clear-fix" role="main">
+
+	<h1 class="access-hide">Latest Posts</h1>
 	
 	<?php if (have_posts()) : while (have_posts()) : the_post(); //BEGIN: The Loop ?>
 
