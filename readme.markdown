@@ -9,6 +9,7 @@ The theme was created and is actively maintained by [mimoYmima] a web design stu
 > --------------------
 
   - Very well thought out HTML5 document structure
+  - Fully Search Engine Optimized
   - Responsive Ready, the style.css file has pre-programmed areas for common media queries
   - [The mother of all body tags]
   - Dynamic sidebar examples
