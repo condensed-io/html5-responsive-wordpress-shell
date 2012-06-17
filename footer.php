@@ -26,10 +26,11 @@
 	</dl-->
 	<!--END: Contact Info-->
 	
-	<!--BEGIN: Credit if you use the shell please either make a donation or keep this ad on the site-->
-	<section id="mym-credit">
-		<small><a id="cred" href="http://html5.mimoymima.com" title="Build your Wordpress themes faster - HTML5 WordPress Shell">built with the HTML5 Wordpress shell</a></small>
-	</section>
+	<!--BEGIN: Credit. If you use this theme please consider keeping this link in your footer.  You may delete it though if needed. -->
+	<article id="mym-credit">
+		<h1>Credits</h1>
+		<h2><a id="cred" href="http://html5.mimoymima.com" title="Build your Wordpress themes faster - HTML5 WordPress Shell">built using the HTML5 Wordpress shell :: html5.mimoymima.com</a></h2>
+	</article>
 	<!--END: Credit-->
 	
 	<p id="copyright"><small>&copy; <?php echo date('Y'); ?> <?php bloginfo('name')?></small></p>
