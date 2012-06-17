@@ -6,7 +6,7 @@ $disableSidebarMain = get_post_meta($post->ID, 'disableSidebarMain', $single = t
 if ($disableSidebarMain !== 'true'): ?>
 
 <aside id="sidebar-main">
-	<h1>Main Sidebar</h1>
+	<h1>Sidebar</h1>
 	<ul>
 		<?php dynamic_sidebar('sidebar-main'); ?>
 	</ul>
@@ -15,7 +15,7 @@ if ($disableSidebarMain !== 'true'): ?>
 <?php endif; ?>
 <!--END: sidebar~main-->
 
-
+<!--BEGIN: content div-->
 <div id="content" class="clear-fix" role="main">
 	
 	<?php if (have_posts()) : while (have_posts()) : the_post(); //BEGIN: The Loop ?>
@@ -63,6 +63,6 @@ if ($disableSidebarMain !== 'true'): ?>
 	<?php endif; ?>
 	
 </div>
-<!--END: Content div-->
+<!--END: content div-->
 
 <?php get_footer(); ?>
