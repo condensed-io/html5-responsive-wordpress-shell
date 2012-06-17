@@ -35,13 +35,15 @@
 		
 		<h2><?php comments_popup_link('Share your comments', '1 Comment', '% Comments'); ?></h2>
 		<?php comments_template( '', true ); ?>
-
-		<?php wp_link_pages(); //this allows for multi-page posts ?>
 			
 	</article>
 	<!--END: Single Post-->
 
-<?php endwhile; else: //ERROR: Nothing Found ?>
+	<?php wp_link_pages(); //this allows for multi-page posts ?>
+
+<?php endwhile; ?>
+
+<?php else: //ERROR: Nothing Found ?>
 
 	<h2>No posts were found :(</h2>
 	
