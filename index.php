@@ -50,19 +50,16 @@ if ($disableSidebarMain !== 'true'): ?>
 	<?php endwhile; ?>
 
 	<?php if (  $wp_query->max_num_pages > 1 ) : // if there's more pages show next and previous links ?>
-				
-	<?php else : ?>
-
-		<h2>No posts were found :(</h2>
-
-	<?php endif; ?>
-	
-		
 		<nav>
 			<h1 class="hide">Main Navigation</h1>
 			<?php posts_nav_link('&nbsp;','<div class="alignleft">&laquo; Previous Page</div>','<div class="alignright">Next Page &raquo;</div>') ?>
 		</nav>
+	<?php endif; ?>
 		
+	<?php else : ?>
+
+		<h2>No posts were found :(</h2>
+
 	<?php endif; ?>
 	
 </div>
