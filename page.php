@@ -28,9 +28,9 @@
 			</article>
 			<!--END: Post-->
 
-		<?php endwhile; ?>
-		
 			<?php wp_link_pages(); //this allows for multi-page posts ?>
+
+		<?php endwhile; ?>		
 
 			<div class="navigation">
 				<?php posts_nav_link('&nbsp;','<div class="alignleft">&laquo; Previous Page</div>','<div class="alignright">Next Page &raquo;</div>') ?>
