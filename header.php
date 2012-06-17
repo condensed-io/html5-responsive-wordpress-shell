@@ -103,7 +103,7 @@ $ipad = strpos($_SERVER['HTTP_USER_AGENT'],"iPad");
 		<header id="site-header" role="banner">
 	
 			<hgroup>
-				<h1 id="site-title"><?php is_home() ? bloginfo('description') : wp_title(''); ?> :: <a href="/"><?php bloginfo('name'); ?></a></h1>
+				<h1 id="site-title"><?php if(!is_home()) { wp_title(''); echo " :: "; } ?><a href="/"><?php bloginfo('name'); ?></a></h1>
 				<h2 id="site-description"><?php bloginfo( 'description' ); ?></h2>
 			</hgroup>
 	
