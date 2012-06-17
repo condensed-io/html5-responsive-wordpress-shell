@@ -44,18 +44,19 @@ if ($disableSidebarMain !== 'true'): ?>
 			</footer>
 		
 		</article>
+
+	<?php wp_link_pages(); //this allows for multi-page posts -- not 100% sure this is the best spot for it ?>
 				
 	<?php endwhile; ?>
-		
-		<?php wp_link_pages(); //this allows for multi-page posts -- not 100% sure this is the best spot for it ?>
-		
+
+	<?php if (  $wp_query->max_num_pages > 1 ) : // if there's more pages show next and previous links ?>
+				
 	<?php else : ?>
 
 		<h2>No posts were found :(</h2>
 
 	<?php endif; ?>
 	
-	<?php if (  $wp_query->max_num_pages > 1 ) : // if there's more pages show next and previous links ?>
 		
 		<nav>
 			<h1 class="hide">Main Navigation</h1>
