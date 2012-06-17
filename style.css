@@ -187,9 +187,9 @@ Author URI: http://mimoymima.com/
 		#footer { clear: both; padding-bottom: 20px; text-align: right; }
 			
 		/* Credit */
-		#footer #mym-credit { font-size: .9em; clear: both; }
-		#footer #mym-credit a { letter-spacing: 1px; }
-		#footer #mym-credit a#cred:link, #footer #mym-credit a#cred:visited { text-decoration: none; color: #39C; }
+		#footer #site-credit { font-size: .9em; clear: both; }
+		#footer #site-credit a { letter-spacing: 1px; }
+		#footer #site-credit a#cred:link, #footer #mym-credit a#cred:visited { text-decoration: none; color: #39C; }
 
 
 
