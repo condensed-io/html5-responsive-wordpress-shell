@@ -5,8 +5,7 @@ This *Shell* theme can freely be used to rapidly develop websites using clean HT
 
 The theme was created and is actively maintained by [mimoYmima] a web design studio in Brooklyn, New York.
 
-> Some Of the Features
-> --------------------
+**Some Of the Features**
 
   - Very well thought out HTML5 document structure
   - Fully Search Engine Optimized
