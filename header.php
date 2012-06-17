@@ -84,10 +84,6 @@ $ipad = strpos($_SERVER['HTTP_USER_AGENT'],"iPad");
 	<?php endif; ?>
 	<!--END: include iphone stylesheet-->
 	
-	<?php if(!is_home() || !is_front_page()): // if not on the home page preload the home page, doesn't work in all browsers but doesn't do any harm if they don't support it ?>
-	<link rel="prefetch" href="/" />
-	<?php endif;?>
-	
 	<!--wp_head hook for Plugins ~ always keep this just before the /head -->
 	<?php wp_head(); ?>
 
