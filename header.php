@@ -15,8 +15,7 @@ $ipad = strpos($_SERVER['HTTP_USER_AGENT'],"iPad");
 	<!--Forces latest IE rendering engine & chrome frame-->
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 
-	<title>
-		<?php // from 2011 theme - prints the title based on what is being viewed
+	<title><?php // from 2011 theme - prints the title based on what is being viewed
 		global $page, $paged;
 
 		wp_title( '|', true, 'right' );
@@ -32,8 +31,7 @@ $ipad = strpos($_SERVER['HTTP_USER_AGENT'],"iPad");
 		// Add a page number if necessary:
 		if ( $paged >= 2 || $page >= 2 )
 			echo ' | ' . sprintf( __( 'Page %s', 'twentyeleven' ), max( $paged, $page ) );
-		?>
-	</title>
+		?></title>
 	
 	<!-- Meta description and keywords Handled by the SEO plugin, don't add your own here just activate the plugin -->
 	
