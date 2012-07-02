@@ -1,7 +1,7 @@
 <?php
 
 // BEGIN: if you are logged into the admin area, show what template someone is using on the top of all pages
-	if (is_user_logged_in()) { add_action('wp_head', 'show_template'); }
+	if (is_user_logged_in()) { add_action('wp_footer', 'show_template'); }
 
 	function show_template() {
 		global $template;
