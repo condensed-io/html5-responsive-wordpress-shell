@@ -132,7 +132,7 @@ Author URI: http://mimoymima.com/
 		a:link, a:visited { color: #39C; text-decoration: underline; }
 		a:hover, a:active, a:focus { color: #F90; text-decoration: none; }
 	
-		/* Hide These Elements but keep them accessible */
+		/* Hide these elements but keep them accessible */
 		.access-hide { position: absolute; left: -999em; }
 
 		/* page-wrapper */
