@@ -15,7 +15,7 @@
 		<header>
 			<h1><?php the_title(); ?></h1>	
 			<time datetime="<?php the_time('c'); ?>" pubdate="pubdate"><?php the_time('F jS, Y'); ?></time>
-			<p>by <?php the_author() ?></p>
+			<p>by <?php the_author(); ?></p>
 		</header>
 		
 		<div class="entry">
@@ -28,7 +28,7 @@
 			<ul class="no-bullet">
 				<li>Posted in <?php the_category(', ') ?></li>
 				<li><?php edit_post_link('[Edit]', '<small>', '</small>'); ?></li>
-				<li>Tags: <?php the_tags('Tags: ', ', ', '<br />'); ?></li>
+				<li><?php the_tags('Tags: ', ', ', '<br />'); ?></li>
 			</ul>
 		</footer>
 		<!--END: Post Meta Data-->
@@ -47,7 +47,7 @@
 
 	<h2>No posts were found :(</h2>
 	
-<?php endif; ?>
+<?php endif; //END: The Loop ?>
 		
 </div>
 <!--END: Content-->
