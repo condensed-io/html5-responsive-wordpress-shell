@@ -45,6 +45,10 @@ remove_action('wp_head', 'wp_generator');
 // removes the automatic paragraph tags from the excerpt, we leave it on for the content and have a custom field you can use to turn it off on a page by page basis --> wpautop = false
 	remove_filter('the_excerpt', 'wpautop');
 
+// used to create custom length excerpts
+function get_the_custom_excerpt($length){
+	return substr( get_the_excerpt(), 0, strrpos( substr( get_the_excerpt(), 0, $length), ' ' ) ).'...';
+}
 
 // Wigetized sidebar, we're registering two, you can add as many as you want
 	if ( function_exists('register_sidebar') )
