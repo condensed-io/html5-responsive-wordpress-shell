@@ -10,6 +10,23 @@
 		//print_r($wp_taxonomies['sections']);
 	}
 
+
+// // create a new taxonomy called 'Countries'
+// function countries_init() {
+//   register_taxonomy(
+//     'countries',
+//     'post',
+//     array(
+//       'label' => __('Countries'),
+//       'sort' => true,
+//       'args' => array('orderby' => 'term_order'),
+//       'rewrite' => array('slug' => 'countries'),
+//     )
+//   );
+// }
+// add_action( 'init', 'countries_init' );
+
+
 // allows you to make custom templates for posts with name structure like single-postID.php (the id is the number not the name) see: http://www.nathanrice.net/blog/wordpress-single-post-templates/
 add_filter('single_template', create_function('$t', 'foreach( (array) get_the_category() as $cat ) { if ( file_exists(TEMPLATEPATH . "/single-{$cat->term_id}.php") ) return TEMPLATEPATH . "/single-{$cat->term_id}.php"; } return $t;' ));
 
