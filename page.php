@@ -18,7 +18,7 @@ if ($disableSidebarMain !== 'true'): ?>
 	
 	<?php if (have_posts()) : ?>
 
-		<?php while (have_posts()) : the_post(); ?>
+		<?php while (have_posts()) : the_post(); //BEGIN: The Loop ?>
 
 			<!--BEGIN: Post-->
 			<article <?php post_class() ?> id="post-<?php the_ID(); ?>">
@@ -49,11 +49,11 @@ if ($disableSidebarMain !== 'true'): ?>
 			<?php endif; ?>
 			<!--END: Page Nav-->
 			
-		<?php else : // ERROR: nothing found ?>
+		<?php else : ?>
 
 			<h2>No posts were found :(</h2>
 
-	<?php endif; ?>
+	<?php endif; //END: The Loop ?>
 
 </div>
 <!--END: Content-->

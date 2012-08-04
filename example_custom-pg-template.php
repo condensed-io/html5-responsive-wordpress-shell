@@ -40,31 +40,29 @@ if ($disableSidebarMain !== 'true'): ?>
 		
 	<?php if ($my_query->have_posts()) : //BEGIN: The Loop ?>
 
-	<h1>Posts in <?php the_category(', ') ?></h1>
+		<h1>Posts in <?php the_category(', ') ?></h1>
 
-	<?php while ( $my_query->have_posts() ) : $my_query->the_post(); ?>
+		<?php while ( $my_query->have_posts() ) : $my_query->the_post(); ?>
 
-	<!--BEGIN: Post-->
-	<article <?php post_class(); ?> id="<?php the_ID(); ?>">
-		
-		<h2><?php the_title(); ?></h2>
-		
-		<time datetime="<?php the_time('c'); ?>" pubdate="pubdate"><?php the_time('F jS, Y'); ?></time>
-		
-		<div class="entry">
-			<?php if ( function_exists("has_post_thumbnail") && has_post_thumbnail() ) { the_post_thumbnail(array(200,160), array("class" => "alignleft post_thumbnail")); } ?>
-			<?php the_excerpt("Continue reading &rarr;"); ?>
-		</div>
-									
-	</article>
-	<!--END: Post-->
-	
-	<?php wp_reset_postdata() // Reset the post data, necessary when you create a new WP_Query object ?>
+			<!--BEGIN: Post-->
+			<article <?php post_class(); ?> id="<?php the_ID(); ?>">
+				
+				<h2><?php the_title(); ?></h2>
+				
+				<time datetime="<?php the_time('c'); ?>" pubdate="pubdate"><?php the_time('F jS, Y'); ?></time>
+				
+				<div class="entry">
+					<?php if ( function_exists("has_post_thumbnail") && has_post_thumbnail() ) { the_post_thumbnail(array(200,160), array("class" => "alignleft post_thumbnail")); } ?>
+					<?php the_excerpt("Continue reading &rarr;"); ?>
+				</div>
+											
+			</article>
+			<!--END: Post-->
 			
-	<?php endwhile; ?>
+			<?php wp_reset_postdata() // Reset the post data, necessary when you create a new WP_Query object ?>
+				
+		<?php endwhile; ?>
 
-		
-	<?php else : // ERROR: nothing found ?>
 			<!--BEGIN: Page Nav-->
 			<nav>
 				<h1 class="hide">Page Navigation</h1>
@@ -74,8 +72,10 @@ if ($disableSidebarMain !== 'true'): ?>
 				<?php previous_posts_link('Newer Entries &raquo;') ?>
 			</nav>
 			<!--END: Page Nav-->
+			
+		<?php else : ?>
 
-	<h2>No posts were found :(</h2>
+		<h2>No posts were found :(</h2>
 
 	<?php endif; //END: The Loop ?>
 

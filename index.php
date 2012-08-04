@@ -18,34 +18,36 @@ if ($disableSidebarMain !== 'true'): ?>
 
 	<h1 class="access-hide">Latest Posts</h1>
 	
-	<?php if (have_posts()) : while (have_posts()) : the_post(); //BEGIN: The Loop ?>
+	<?php if (have_posts()) : ?>
 
-		<article <?php post_class() ?> id="post-<?php the_ID(); ?>">
+		<?php while (have_posts()) : the_post(); //BEGIN: The Loop ?>
 
-			<header>
-				<h1><?php the_title(); ?></h1>
-				<time datetime="<?php the_time('c'); ?>" pubdate="pubdate"><?php the_time('F jS, Y'); ?></time>
-				<p>by <?php the_author() ?></p>
-			</header>
-			
-			<div class="entry">
-				<?php the_content(); ?>
-			</div>
-						
-			<footer id="post-meta-data">
-				<ul class="no-bullet">
-					<li class="add-comment"><?php comments_popup_link('Share your comments', '1 Comment', '% Comments'); ?></li>
-					<li>Posted in <?php the_category(', ') ?></li>
-					<li><?php edit_post_link('[Edit]', '<small>', '</small>'); ?></li>
-					<li><?php the_tags('Tags: ', ', ', '<br />'); ?></li>
-				</ul>
-			</footer>
-		
-		</article>
+			<article <?php post_class() ?> id="post-<?php the_ID(); ?>">
 
-	<?php wp_link_pages(); //this allows for multi-page posts -- not 100% sure this is the best spot for it ?>
+				<header>
+					<h1><?php the_title(); ?></h1>
+					<time datetime="<?php the_time('c'); ?>" pubdate="pubdate"><?php the_time('F jS, Y'); ?></time>
+					<p>by <?php the_author() ?></p>
+				</header>
 				
-	<?php endwhile; ?>
+				<div class="entry">
+					<?php the_content(); ?>
+				</div>
+							
+				<footer id="post-meta-data">
+					<ul class="no-bullet">
+						<li class="add-comment"><?php comments_popup_link('Share your comments', '1 Comment', '% Comments'); ?></li>
+						<li>Posted in <?php the_category(', ') ?></li>
+						<li><?php edit_post_link('[Edit]', '<small>', '</small>'); ?></li>
+						<li><?php the_tags('Tags: ', ', ', '<br />'); ?></li>
+					</ul>
+				</footer>
+			
+			</article>
+
+		<?php wp_link_pages(); //this allows for multi-page posts -- not 100% sure this is the best spot for it ?>
+				
+		<?php endwhile; ?>
 
 		<!--BEGIN: Page Nav-->
 		<?php if ( $wp_query->max_num_pages > 1 ) : // if there's more than one page turn on pagination ?>
@@ -60,7 +62,7 @@ if ($disableSidebarMain !== 'true'): ?>
 
 		<h2>No posts were found :(</h2>
 
-	<?php endif; ?>
+	<?php endif; //END: The Loop ?>
 	
 </div>
 <!--END: content div-->

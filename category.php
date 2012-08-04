@@ -59,11 +59,11 @@ if ($disableSidebarMain !== 'true'): ?>
 			<?php endif; ?>
 			<!--END: Page Nav-->
 			
-		<?php else : //ERROR: nothing was found ?>
+		<?php else : ?>
 
 			<h2>No posts were found :(</h2>
 
-	<?php endif; ?>
+	<?php endif; //END: The Loop ?>
 
 </div>
 <!--END: Content-->
