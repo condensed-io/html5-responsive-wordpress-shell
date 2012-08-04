@@ -38,6 +38,14 @@ remove_action('wp_head', 'wp_generator');
 
 
 // loads jQuery from the Google CDN, loading jquery this way ensures it won't be included twice with plugins that include it
+/*
+if you are developing this site locally you can use wordpress' local copy of jquery by commenting out the deregister line and the line with google's version of jquery below and registering the local copy
+like this:
+           // wp_deregister_script( 'jquery' );
+           // wp_register_script( 'jquery', 'https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js');
+           wp_register_script ( 'jquery' );
+           wp_enqueue_script( 'jquery' );
+*/
 
 	function my_init_method() {
 	    if (!is_admin()) {
