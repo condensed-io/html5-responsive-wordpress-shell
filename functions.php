@@ -75,6 +75,31 @@ function get_the_custom_excerpt($length){
 	return substr( get_the_excerpt(), 0, strrpos( substr( get_the_excerpt(), 0, $length), ' ' ) ).'...';
 }
 
+// Register wigetized sidebars, changing the default output from lists to divs
+
+    if ( function_exists('register_sidebar') )
+
+    register_sidebar(array(
+        'id' => 'sidebar-main',
+        'name' => 'Sidebar: Main',
+        'description' => 'The second (secondary) sidebar.',
+        'before_widget' => '<div id="%1$s" class="widget %2$s">',
+        'after_widget' => '</div>',
+        'before_title' => '<h4 class="widgettitle">',
+        'after_title' => '</h4>',
+    ));
+    
+    // // if you want to add more just keep adding them like this:
+    // register_sidebar(array(
+    //     'id' => 'sidebar-single',
+    //     'name' => 'Sidebar: Single',
+    //     'description' => 'The second (secondary) sidebar.',
+    //     'before_widget' => '<div id="%1$s" class="widget %2$s">',
+    //     'after_widget' => '</div>',
+    //     'before_title' => '<h4 class="widgettitle">',
+    //     'after_title' => '</h4>',
+    // ));
+
 // Wigetized sidebar, we're registering two, you can add as many as you want
 	if ( function_exists('register_sidebar') )
 		register_sidebar(array('name'=>'Sidebar - Main', 'id' => 'sidebar-main'));
