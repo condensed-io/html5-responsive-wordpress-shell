@@ -63,15 +63,17 @@ if ($disableSidebarMain !== 'true'): ?>
 			
 	<?php endwhile; ?>
 
-	<nav>
-		<h1 class="hide">Page Navigation</h1>
-		<?php // posts_nav_link('&nbsp;','<div class="alignleft">&laquo; Previous Page</div>','<div class="alignright">Next Page &raquo;</div>') ?>
-		
-		<?php next_posts_link('&laquo; Older Entries', $my_query->max_num_pages) //important to put in the argument for the number of pages in the custom query here or else it grabs page numbers from the main wp_query?>
-		<?php previous_posts_link('Newer Entries &raquo;') ?>
-	</nav>
 		
 	<?php else : // ERROR: nothing found ?>
+			<!--BEGIN: Page Nav-->
+			<nav>
+				<h1 class="hide">Page Navigation</h1>
+				<?php // posts_nav_link('&nbsp;','<div class="alignleft">&laquo; Previous Page</div>','<div class="alignright">Next Page &raquo;</div>') ?>
+				
+				<?php next_posts_link('&laquo; Older Entries', $my_query->max_num_pages) //important to put in the argument for the number of pages in the custom query here or else it grabs page numbers from the main wp_query ?>
+				<?php previous_posts_link('Newer Entries &raquo;') ?>
+			</nav>
+			<!--END: Page Nav-->
 
 	<h2>No posts were found :(</h2>
 

@@ -66,10 +66,14 @@ if ($disableSidebarMain !== 'true'): ?>
 				
 		<?php endwhile; ?>
 
-		<nav class="navigation">
-			<h1>Page Navigation</h1>
-			<?php posts_nav_link('&nbsp;','<div class="alignright">Newer Entries &raquo;</div>','<div class="alignleft">&laquo; Older Entries</div>') ?>
-		</nav>
+		<!--BEGIN: Page Nav-->
+		<?php if ( $wp_query->max_num_pages > 1 ) : // if there's more than one page turn on pagination ?>
+			<nav>
+				<h1 class="hide">Page Navigation</h1>
+				<?php posts_nav_link('&nbsp;','<div class="alignleft">&laquo; Previous Page</div>','<div class="alignright">Next Page &raquo;</div>') ?>
+			</nav>
+		<?php endif; ?>
+		<!--END: Page Nav-->
 		
 		<?php else : // ERROR: nothing found ?>
 
