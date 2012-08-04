@@ -64,7 +64,7 @@ if ($disableSidebarMain !== 'true'): ?>
 		<?php endwhile; ?>
 
 			<!--BEGIN: Page Nav-->
-			<nav>
+			<nav id="page-nav">
 				<h1 class="hide">Page Navigation</h1>
 				<?php // posts_nav_link('&nbsp;','<div class="alignleft">&laquo; Previous Page</div>','<div class="alignright">Next Page &raquo;</div>') ?>
 				
