@@ -27,17 +27,17 @@
 // add_action( 'init', 'countries_init' );
 
 
-// allows you to make custom templates for posts with name structure like single-postID.php (the id is the number not the name) see: http://www.nathanrice.net/blog/wordpress-single-post-templates/
+// Allows you to make custom templates for posts with name structure like single-postID.php (the id is the number not the name) see: http://www.nathanrice.net/blog/wordpress-single-post-templates/
 add_filter('single_template', create_function('$t', 'foreach( (array) get_the_category() as $cat ) { if ( file_exists(TEMPLATEPATH . "/single-{$cat->term_id}.php") ) return TEMPLATEPATH . "/single-{$cat->term_id}.php"; } return $t;' ));
 
 
-// removes tags generated in the WordPress Head that we don't use, you could read up and re-enable them if you think they're needed
+// Removes tags generated in the WordPress Head that we don't use, you could read up and re-enable them if you think they're needed
 remove_action('wp_head', 'wlwmanifest_link');
 remove_action('wp_head', 'rsd_link');
 remove_action('wp_head', 'wp_generator');
 
 
-// loads jQuery from the Google CDN, loading jquery this way ensures it won't be included twice with plugins that include it
+// Loads jQuery from the Google CDN, loading jquery this way ensures it won't be included twice with plugins that include it
 /*
 if you are developing this site locally you can use wordpress' local copy of jquery by commenting out the deregister line and the line with google's version of jquery below and registering the local copy
 like this:
@@ -57,20 +57,20 @@ like this:
 	add_action('init', 'my_init_method');
 
 
-// activates menu features
+// Activates menu features
 	if (function_exists('add_theme_support')) {
 	    add_theme_support('menus');
 	}
 
 
-// activates Featured Image function
+// Activates Featured Image function
 	add_theme_support( 'post-thumbnails' );
 
 
-// removes the automatic paragraph tags from the excerpt, we leave it on for the content and have a custom field you can use to turn it off on a page by page basis --> wpautop = false
+// Removes the automatic paragraph tags from the excerpt, we leave it on for the content and have a custom field you can use to turn it off on a page by page basis --> wpautop = false
 	remove_filter('the_excerpt', 'wpautop');
 
-// used to create custom length excerpts
+// Used to create custom length excerpts
 function get_the_custom_excerpt($length){
 	return substr( get_the_excerpt(), 0, strrpos( substr( get_the_excerpt(), 0, $length), ' ' ) ).'...';
 }
