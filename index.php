@@ -6,10 +6,8 @@ $disableSidebarMain = get_post_meta($post->ID, 'disableSidebarMain', $single = t
 if ($disableSidebarMain !== 'true'): ?>
 
 <aside id="sidebar-main">
-	<h1>Sidebar</h1>
-	<ul>
-		<?php dynamic_sidebar('sidebar-main'); ?>
-	</ul>
+	<h1>Main Sidebar</h1>
+	<?php dynamic_sidebar('sidebar-main'); ?>
 </aside>
 
 <?php endif; ?>

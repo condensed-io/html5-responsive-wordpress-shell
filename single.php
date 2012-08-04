@@ -1,9 +1,17 @@
 <?php get_header(); ?>
 
-<?php // look to see if we've disabled sidebar in a custom field, if not show it
-	$disableSidebarLeft = get_post_meta($post->ID, 'disableSidebarLeft', $single = true);
-	if ($disableSidebarLeft !== 'true') { get_sidebar('SidebarLeft'); }
-?>
+<!--BEGIN: sidebar~main-->
+<?php // to disable this sidebar on a page by page basis just add a custom field to your page or post of disableSidebarMain = true
+$disableSidebarMain = get_post_meta($post->ID, 'disableSidebarMain', $single = true);
+if ($disableSidebarMain !== 'true'): ?>
+
+<aside id="sidebar-main">
+	<h1>Main Sidebar</h1>
+	<?php dynamic_sidebar('sidebar-main'); ?>
+</aside>
+
+<?php endif; ?>
+<!--END: sidebar~main-->
 
 <div id="content" class="clear-fix" role="main">
 	
@@ -52,9 +60,4 @@
 </div>
 <!--END: Content-->
 
-<?php // look to see if we've disabled sidebar in a custom field, if not show it
-	$disableSidebarRight = get_post_meta($post->ID, 'disableSidebarRight', $single = true);
-	if ($disableSidebarRight !== 'true') { get_sidebar('SidebarRight'); }
-?>
-		
 <?php get_footer(); ?>
