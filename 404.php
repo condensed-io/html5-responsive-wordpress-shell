@@ -1,9 +1,6 @@
 <?php get_header(); ?>
 
-<?php // look to see if we've disabled sidebar in a custom field, if not show it
-	$disableSidebarLeft = get_post_meta($post->ID, 'disableSidebarLeft', $single = true);
-	if ($disableSidebarLeft !== 'true') { get_sidebar('SidebarLeft'); }
-?>
+<!--Put your sidebars in wherever necessary-->
 
 <!--BEGIN: Content-->
 <div id="content" role="main">
@@ -18,10 +15,5 @@
 
 </div>
 <!--END: Content-->
-
-<?php // look to see if we've disabled sidebar in a custom field, if not show it
-	$disableSidebarRight = get_post_meta($post->ID, 'disableSidebarRight', $single = true);
-	if ($disableSidebarRight !== 'true') { get_sidebar('SidebarRight'); }
-?>
 	
 <?php get_footer(); ?>
