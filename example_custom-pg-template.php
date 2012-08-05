@@ -64,13 +64,15 @@ if ($disableSidebarMain !== 'true'): ?>
 		<?php endwhile; ?>
 
 			<!--BEGIN: Page Nav-->
-			<nav id="page-nav">
-				<h1 class="hide">Page Navigation</h1>
-				<?php // posts_nav_link('&nbsp;','<div class="alignleft">&laquo; Previous Page</div>','<div class="alignright">Next Page &raquo;</div>') ?>
-				
-				<?php next_posts_link('&laquo; Older Entries', $my_query->max_num_pages) //important to put in the argument for the number of pages in the custom query here or else it grabs page numbers from the main wp_query ?>
-				<?php previous_posts_link('Newer Entries &raquo;') ?>
-			</nav>
+			<?php if ( $wp_query->max_num_pages > 1 ) : // if there's more than one page turn on pagination ?>
+				<nav id="page-nav">
+		        	<h1 class="hide">Page Navigation</h1>
+			        <ul class="clear-fix">
+				        <li class="prev-link"><?php next_posts_link('&laquo; Previous Page', $my_query->max_num_pages) //important to put in the argument for the number of pages in the custom query here or else it grabs page numbers from the main wp_query ?></li>
+				        <li class="next-link"><?php previous_posts_link('Next Page &raquo;') ?></li>
+			        </ul>
+		        </nav>
+			<?php endif; ?>
 			<!--END: Page Nav-->
 			
 		<?php else : ?>
