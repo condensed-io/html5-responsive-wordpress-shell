@@ -162,13 +162,16 @@ Author URI: http://mimoymima.com/
 		#content { }
 		#content em { font-family: baskerville, cambria, cochin, "Palatino Linotype", "Book Antiqua", Palatino, "Times New Roman", serif; }	
 		
+		/* Page Nav */
+		#page-nav a { float: right; padding: .5em 2em; margin: 1em; }
+
 		/* Page */
 		.page {}
 
 		/* Single */
 		.single {}
 
-		/* Comments using Intense Debate */			
+		/* Comments using Intense Debate */		
 	
 	
 	/*--- SIDEBAR ~ MAIN ---*/

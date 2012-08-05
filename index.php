@@ -54,8 +54,8 @@ if ($disableSidebarMain !== 'true'): ?>
 				<nav id="page-nav">
 		        	<h1 class="hide">Page Navigation</h1>
 			        <ul class="clear-fix">
-				        <li class="prev-link"><?php next_posts_link('&laquo; Previous Page') ?></li>
-				        <li class="next-link"><?php previous_posts_link('Next Page &raquo;') ?></li>
+				        <li class="next-link"><?php next_posts_link('Next Page') ?></li>
+				        <li class="prev-link"><?php previous_posts_link('Previous Page') ?></li>
 			        </ul>
 		        </nav>
 			<?php endif; ?>

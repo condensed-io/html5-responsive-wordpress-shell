@@ -68,8 +68,8 @@ if ($disableSidebarMain !== 'true'): ?>
 				<nav id="page-nav">
 		        	<h1 class="hide">Page Navigation</h1>
 			        <ul class="clear-fix">
-				        <li class="prev-link"><?php next_posts_link('&laquo; Previous Page', $my_query->max_num_pages) //important to put in the argument for the number of pages in the custom query here or else it grabs page numbers from the main wp_query ?></li>
-				        <li class="next-link"><?php previous_posts_link('Next Page &raquo;') ?></li>
+				        <li class="next-link"><?php next_posts_link('Next Page', $my_query->max_num_pages) //important to put in the argument for the number of pages in the custom query here or else it grabs page numbers from the main wp_query ?></li>
+				        <li class="prev-link"><?php previous_posts_link('Previous Page') ?></li>
 			        </ul>
 		        </nav>
 			<?php endif; ?>
