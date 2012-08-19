@@ -168,8 +168,11 @@ Author URI: http://mimoymima.com/
 		/* Page */
 		.page {}
 
+		/* Posts */
+		.post {}
+
 		/* Single */
-		.single {}
+		.single-template {}
 
 		/* Comments using Intense Debate */		
 	
