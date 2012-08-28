@@ -37,8 +37,9 @@ if ($disableSidebarMain !== 'true'): ?>
 		</footer>
 		<!--END: Post Meta Data-->
 		
-		<h2><?php comments_popup_link('Share your comments', '1 Comment', '% Comments'); ?></h2>
+		<!--BEGIN: Comments-->
 		<?php comments_template( '', true ); ?>
+		<!--END: Comments-->
 			
 	</article>
 	<!--END: Single Post-->
