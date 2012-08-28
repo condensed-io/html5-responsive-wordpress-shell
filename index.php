@@ -18,9 +18,9 @@ if ($disableSidebarMain !== 'true'): ?>
 
 	<h1 class="access-hide">Latest Posts</h1>
 	
-	<?php if (have_posts()) : ?>
+	<?php if (have_posts()) : // BEGIN THE LOOP ?>
 
-		<?php while (have_posts()) : the_post(); //BEGIN: The Loop ?>
+		<?php while (have_posts()) : the_post(); //LOOPING through all the posts, we split onto two lines for clean indentation ?>
 
 			<article <?php post_class() ?> id="post-<?php the_ID(); ?>">
 
@@ -45,9 +45,9 @@ if ($disableSidebarMain !== 'true'): ?>
 			
 			</article>
 
-		<?php wp_link_pages(); //this allows for multi-page posts -- not 100% sure this is the best spot for it ?>
+		<?php wp_link_pages(); //this allows for multi-page posts ?>
 				
-		<?php endwhile; ?>
+		<?php endwhile; //END: looping through all the posts ?>
 
 			<!--BEGIN: Page Nav-->
 			<?php if ( $wp_query->max_num_pages > 1 ) : // if there's more than one page turn on pagination ?>
