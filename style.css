@@ -216,7 +216,7 @@ Author URI: http://mimoymima.com/
 
 @media screen and (min-width: 480px) and (max-width: 600px) {
 	
-	/* For reference, delete later */
+	/* Shows media query size on the top of the browser window -- DELETE before making site live */
 	body:before { content: "480-600"; left: 1em; position: absolute; top: 1em; z-index: 999; }
 
 	.row { width: 480px; }
@@ -232,7 +232,7 @@ Author URI: http://mimoymima.com/
 
 @media screen and (min-width: 600px) and (max-width: 750px) {
 
-	/* For reference, delete later */
+	/* Shows media query size on the top of the browser window -- DELETE before making site live */
 	body:before { content: "600-750"; left: 1em; position: absolute; top: 1em; z-index: 999; }
 
 	.row { width: 600px; }
@@ -248,7 +248,7 @@ Author URI: http://mimoymima.com/
 
 @media screen and (min-width: 750px) and (max-width: 980px) {
 
-	/* For reference, delete later */
+	/* Shows media query size on the top of the browser window -- DELETE before making site live */
 	body:before { content: "750-980"; left: 1em; position: absolute; top: 1em; z-index: 999; }
 
 	.row { width: 750px; }
@@ -265,7 +265,7 @@ Author URI: http://mimoymima.com/
 
 @media screen and (min-width: 980px) and (max-width: 1200px) {
 
-	/* For reference, delete later */
+	/* Shows media query size on the top of the browser window -- DELETE before making site live */
 	body:before { content: "980-1200"; left: 1em; position: absolute; top: 1em; z-index: 999; }
 
 	.row { width: 980px; }
@@ -282,7 +282,7 @@ Author URI: http://mimoymima.com/
 
 @media screen and (min-width: 1200px) {
 
-	/* For reference, delete later */
+	/* Shows media query size on the top of the browser window -- DELETE before making site live */
 	body:before { content: "1200 and up"; left: 1em; position: absolute; top: 1em; z-index: 999; }
 
 	.row { width: 1200px; }
