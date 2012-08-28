@@ -40,7 +40,7 @@ if ($disableSidebarMain !== 'true'): ?>
 						<li><?php the_time('F jS, Y') ?> by <?php the_author() ?></li>
 						<li class="add-comment"><?php comments_popup_link('Share Your Comments', '1 Comment', '% Comments'); ?></li>
 						<li><?php edit_post_link('[Edit]', '<small>', '</small>'); ?></li>
-						<li><div class="utw"><?php if(function_exists ('UTW_ShowTagsForCurrentPost')) {UTW_ShowTagsForCurrentPost("commalist","",0); } ?></div></li>
+						<li><?php the_tags('Tags: ', ', ', '<br />'); ?></li>
 					</ul>
 				</footer>
 				<!--END: Post Meta Data-->
