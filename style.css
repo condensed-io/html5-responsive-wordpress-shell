@@ -173,8 +173,8 @@ Author URI: http://mimoymima.com/
 
 		/* Single */
 		.single-template {}
-
-		/* Comments using Intense Debate */		
+			/* Comments using Intense Debate */
+		.post-meta-data	{ margin: 1em 0; }
 	
 	
 	/*--- SIDEBAR ~ MAIN ---*/
