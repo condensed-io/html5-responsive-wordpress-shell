@@ -220,8 +220,6 @@ Author URI: http://mimoymima.com/
 	/* Shows media query size on the top of the browser window -- DELETE before making site live */
 	body:before { content: "480-600"; left: 1em; position: absolute; top: 1em; z-index: 999; }
 
-	.row { width: 480px; }
-
 	/* add your styles here */
 
 } /* END: 480 media query - don't delete this bracket */
@@ -236,8 +234,6 @@ Author URI: http://mimoymima.com/
 	/* Shows media query size on the top of the browser window -- DELETE before making site live */
 	body:before { content: "600-750"; left: 1em; position: absolute; top: 1em; z-index: 999; }
 
-	.row { width: 600px; }
-
 	/* add your styles here */
 
 } /* END: 600 media query - don't delete this bracket */
@@ -251,8 +247,6 @@ Author URI: http://mimoymima.com/
 
 	/* Shows media query size on the top of the browser window -- DELETE before making site live */
 	body:before { content: "750-980"; left: 1em; position: absolute; top: 1em; z-index: 999; }
-
-	.row { width: 750px; }
 
 	/* add your styles here */
 
@@ -269,8 +263,6 @@ Author URI: http://mimoymima.com/
 	/* Shows media query size on the top of the browser window -- DELETE before making site live */
 	body:before { content: "980-1200"; left: 1em; position: absolute; top: 1em; z-index: 999; }
 
-	.row { width: 980px; }
-
 	/* add your styles here */
 
 } /* END: 980 media query - don't delete this bracket */
@@ -285,8 +277,6 @@ Author URI: http://mimoymima.com/
 
 	/* Shows media query size on the top of the browser window -- DELETE before making site live */
 	body:before { content: "1200 and up"; left: 1em; position: absolute; top: 1em; z-index: 999; }
-
-	.row { width: 1200px; }
 
 	/* add your styles here */
 
