@@ -68,10 +68,11 @@ Author URI: http://mimoymima.com/
 	/*--- UTILITY ---*/
 
 		/* Clear Fixes - two methods, clear-fix is attached to the element you want to clear, .clear-all you can attach to a hr or br tag to clear the item before it as a last resort when you're in a hurry */
-		.clear-fix { display: inline-block; } /* This needs to be first because FF3 is now supporting this */
-		.clear-fix:after { content: " "; display: block; height: 0; clear: both; font-size: 0; visibility: hidden; }
+		.clear-fix:before,
+		.clear-fix:after { content: ""; display: table; } 
+		.clear-fix:after { clear: both; }
+
 		.clear-all { visibility: hidden; clear: both; margin: 0 !important; padding: 0 !important; font-size: 0; height: 1px; }
-			/* TODO: might try this one instead one day: http://nicolasgallagher.com/micro-clearfix-hack */
 
 		/* WordPress WYSIWYG alignment -- when you put in images that span the entire width of the content area remove the width and height */
 		img.aligncenter { max-width: 100%; display: block; margin: 5px auto; }
