@@ -212,7 +212,19 @@ Author URI: http://mimoymima.com/
 
 
 /*--------------------------------------------------------------------------------------------------*/
-/* 480 media query */
+/* 100-480 media query */
+/*--------------------------------------------------------------------------------------------------*/
+
+@media screen and (min-width: 100px) and (max-width: 480px) {
+	
+	/* Shows media query size on the top of the browser window -- DELETE before making site live */
+	body:before { content: "100-4800"; left: 1em; position: absolute; top: 1em; z-index: 999; }
+
+	/* add your styles here */
+
+} /* END: 100-480 media query - don't delete this bracket */
+
+
 /*--------------------------------------------------------------------------------------------------*/
 /* 480-600 media query */
 /*--------------------------------------------------------------------------------------------------*/
