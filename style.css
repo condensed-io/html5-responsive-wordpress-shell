@@ -214,6 +214,8 @@ Author URI: http://mimoymima.com/
 /*--------------------------------------------------------------------------------------------------*/
 /* 480 media query */
 /*--------------------------------------------------------------------------------------------------*/
+/* 480-600 media query */
+/*--------------------------------------------------------------------------------------------------*/
 
 @media screen and (min-width: 480px) and (max-width: 600px) {
 	
@@ -222,11 +224,11 @@ Author URI: http://mimoymima.com/
 
 	/* add your styles here */
 
-} /* END: 480 media query - don't delete this bracket */
+} /* END: 480-600 media query - don't delete this bracket */
 
 
 /*--------------------------------------------------------------------------------------------------*/
-/* 600 media query */
+/* 600-750 media query */
 /*--------------------------------------------------------------------------------------------------*/
 
 @media screen and (min-width: 600px) and (max-width: 750px) {
@@ -236,11 +238,11 @@ Author URI: http://mimoymima.com/
 
 	/* add your styles here */
 
-} /* END: 600 media query - don't delete this bracket */
+} /* END: 600-750 media query - don't delete this bracket */
 
 
 /*--------------------------------------------------------------------------------------------------*/
-/* 750 media query */
+/* 750-980 media query */
 /*--------------------------------------------------------------------------------------------------*/
 
 @media screen and (min-width: 750px) and (max-width: 980px) {
@@ -250,12 +252,12 @@ Author URI: http://mimoymima.com/
 
 	/* add your styles here */
 
-} /* END: 750 media query - don't delete this bracket */
+} /* END: 750-980 media query - don't delete this bracket */
 
 
 
 /*--------------------------------------------------------------------------------------------------*/
-/* 980 media query */
+/* 980-1200 media query */
 /*--------------------------------------------------------------------------------------------------*/
 
 @media screen and (min-width: 980px) and (max-width: 1200px) {
@@ -265,12 +267,12 @@ Author URI: http://mimoymima.com/
 
 	/* add your styles here */
 
-} /* END: 980 media query - don't delete this bracket */
+} /* END: 980-1200 media query - don't delete this bracket */
 
 
 
 /*--------------------------------------------------------------------------------------------------*/
-/* 1200 media query */
+/* 1200+ media query */
 /*--------------------------------------------------------------------------------------------------*/
 
 @media screen and (min-width: 1200px) {
@@ -280,4 +282,4 @@ Author URI: http://mimoymima.com/
 
 	/* add your styles here */
 
-} /* END: 1200 media query - don't delete this bracket */
+} /* END: 1200+ media query - don't delete this bracket */
