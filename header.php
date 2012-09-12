@@ -2,6 +2,7 @@
 // store a few user agent variables, don't delete, we'll use these later
 $iphone = strpos($_SERVER['HTTP_USER_AGENT'],"iPhone");
 $ipad = strpos($_SERVER['HTTP_USER_AGENT'],"iPad");
+$android = strpos($_SERVER['HTTP_USER_AGENT'],"Android");
 ?>
 
 <!DOCTYPE html>
@@ -75,12 +76,14 @@ $ipad = strpos($_SERVER['HTTP_USER_AGENT'],"iPad");
 	<!--[if IE 7]><link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/css/ie7.css" media="screen" /><![endif]-->
 	<!--END: IE Specific Hacks-->
 	
-	<!--BEGIN: include iphone stylesheet-->
+	<!--BEGIN: mobile stuff-->
 	<?php if ($iphone == true) : ?>
 		<link href="<?php echo $templateURL; ?>/css/iphone.css" type="text/css" rel="stylesheet" />
 		<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0;" />
+	<?php elseif ($android == true) : ?>
+		<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0;" />
 	<?php endif; ?>
-	<!--END: include iphone stylesheet-->
+	<!--END: mobile stuff-->
 	
 	<!--wp_head hook for Plugins ~ always keep this just before the /head -->
 	<?php wp_head(); ?>
