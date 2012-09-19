@@ -126,7 +126,7 @@ Author URI: http://mimoymima.com/
 		body { background: #FFF; color: #333; }
 
 		/* Sets font family, size, width, and margins for the page */
-		body { font-size: 14px; font-weight: 300; line-height: 150%; font-family: 'Helvetica Neue', helvetica, sans-serif; }
+		body { font-size: 14px; font-weight: 300; line-height: 1.5; font-family: 'Helvetica Neue', helvetica, sans-serif; }
 	
 		/* Headings */
 		h1, h2, h3, h4, h5, h6 { font-weight: 500; font-family: 'StMarieThin', 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', helvetica, sans-serif; }
