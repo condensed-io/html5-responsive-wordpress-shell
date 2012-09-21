@@ -26,6 +26,14 @@
 // }
 // add_action( 'init', 'countries_init' );
 
+// Add a 'first' and 'last' class to the first and last menu item pulled from custom menus
+function add_first_and_last($output) {
+$output = preg_replace('/class="menu-item/', 'class="first-menu-item menu-item', $output, 1);
+$output = substr_replace($output, 'class="last-menu-item menu-item', strripos($output, 'class="menu-item'), strlen('class="menu-item'));
+return $output;
+}
+add_filter('wp_nav_menu', 'add_first_and_last');
+
 
 // Allows you to make custom templates for posts with name structure like single-postID.php (the id is the number not the name) see: http://www.nathanrice.net/blog/wordpress-single-post-templates/
 add_filter('single_template', create_function('$t', 'foreach( (array) get_the_category() as $cat ) { if ( file_exists(TEMPLATEPATH . "/single-{$cat->term_id}.php") ) return TEMPLATEPATH . "/single-{$cat->term_id}.php"; } return $t;' ));
