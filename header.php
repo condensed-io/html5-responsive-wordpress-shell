@@ -59,8 +59,7 @@ $android = strpos($_SERVER['HTTP_USER_AGENT'],"Android");
 		<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0;" />
 	<?php endif; ?>
 	
-	<!--wp_head hook for Plugins ~ always keep this just before the /head -->
-	<?php wp_head(); ?>
+	<?php wp_head(); // wp_head hook for Plugins ~ always keep this just before the /head tag ?>
 
 	<!--SCRIPTS-->
 		<script type="text/JavaScript" src="<?php bloginfo('template_url'); ?>/js/functions.js"></script>
