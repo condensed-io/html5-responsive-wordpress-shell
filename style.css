@@ -218,7 +218,7 @@ Author URI: http://mimoymima.com/
 @media screen and (min-width: 100px) and (max-width: 480px) {
 	
 	/* Shows media query size on the top of the browser window -- DELETE before making site live */
-	body:before { content: "100-4800"; left: 1em; position: absolute; top: 1em; z-index: 999; }
+	body:before { content: "100-480"; left: 1em; position: absolute; top: 1em; z-index: 999; }
 
 	/* add your styles here */
 
