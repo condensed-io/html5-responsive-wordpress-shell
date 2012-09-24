@@ -67,7 +67,7 @@ if ($disableSidebarMain !== 'true'): ?>
 
 	<?php endif; //END: The Loop ?>
 	
-</div>
+</section>
 <!--END: content div-->
 
 <?php get_footer(); ?>
