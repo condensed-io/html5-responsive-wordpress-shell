@@ -16,25 +16,9 @@ $android = strpos($_SERVER['HTTP_USER_AGENT'],"Android");
 	<!--Forces latest IE rendering engine & chrome frame-->
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 
-	<title><?php // from 2011 theme - prints the title based on what is being viewed
-		global $page, $paged;
+	<!-- title & meta handled by the yoast plugin, don't add your own here just activate the plugin -->
 
-		wp_title( '|', true, 'right' );
-
-		// Add the blog name.
-		bloginfo( 'name' );
-
-		// Add the blog description for the home/front page.
-		$site_description = get_bloginfo( 'description', 'display' );
-		if ( $site_description && ( is_home() || is_front_page() ) )
-			echo " | $site_description";
-
-		// Add a page number if necessary:
-		if ( $paged >= 2 || $page >= 2 )
-			echo ' | ' . sprintf( __( 'Page %s', 'twentyeleven' ), max( $paged, $page ) );
-		?></title>
-	
-	<!-- Meta description, keywords, open graph meta tags, all handled by the yoast SEO plugin, don't add your own here just activate the plugin -->
+	<title><?php wp_title(''); ?></title>
 	
 	<!-- favicon & other link Tags -->
 	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
