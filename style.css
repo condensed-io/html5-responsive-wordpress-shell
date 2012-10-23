@@ -203,9 +203,6 @@ Author URI: http://mimoymima.com/
 /* Specific Page Styles */
 /*--------------------------------------------------------------------------------------------------*/
 
-	/*--- style the 503 page (coming soon page) you activate this template file in the maintenance mode plugin ---*/
-	.maintenance {}
-
 	/*--- home ---*/
 	#home {}
 
