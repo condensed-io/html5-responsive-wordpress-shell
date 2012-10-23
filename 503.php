@@ -11,7 +11,7 @@
 
 	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 
-	<title><?php if (is_single() || is_page() || is_archive()) { wp_title('',true); } else { bloginfo('description'); } ?> &#8212; <?php bloginfo('name'); ?></title>
+	<title><?php bloginfo('name'); ?></title>
 
 	<link rel="copyright" href="#copyright" /> 
 	<link rel="icon" href="/favicon.ico" type="image/x-icon" />  
