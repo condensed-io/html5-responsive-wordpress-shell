@@ -26,31 +26,8 @@
 
 <body id="splash" class="maintenance">
 
-<header>
-	<div id="masthead" role="banner">
-		<div class="title"><a href="/"><?php bloginfo('name'); ?></a></div>
-		<div class="description"><?php echo get_bloginfo ( 'description' ); ?></div>
-	</div>
-</header>
-
-<div id="content" class="clear-fix" role="main">
-
-	<h1>Our site is getting a tune-up <br /> be back soon.</h1>
-
-</div>
-
-<footer id="footer" role="contentinfo">
-		
-	<!--BEGIN: mimoYmima.com credit-->
-	<h3 id="mym-credit">
-		<a href="http://www.mimoymima.com" title="web design Brooklyn, NY &amp; Madrid, Spain">mimoYmima<br />
-		creative website design<br />
-		Brooklyn &amp; Madrid</a>
-	</h3>
-	<!--END: mimoYmima.com credit-->
-		
-</footer>
-<!--END: Footer-->
+	<img src="/wp-content/themes/theme_condensed/images/img_coming-soon.png" alt="coming soon" />
 
 </body>
+
 </html>
