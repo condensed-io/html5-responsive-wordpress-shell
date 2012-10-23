@@ -24,7 +24,7 @@
 
 </head>
 
-<body id="splash" class="maintenance">
+<body>
 
 	<img src="/wp-content/themes/theme_condensed/images/img_coming-soon.png" alt="coming soon" />
 
