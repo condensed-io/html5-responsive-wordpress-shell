@@ -51,6 +51,7 @@
 	<div id="content" class="clear-fix" role="main">
 
 		<!-- coming soon image -->
+		<!-- coming soon image ~ should be roughly 1000px wide ** don't put the width in the image tag below ** -->
 		<img class="abs-center" src="/wp-content/themes/html5-responsive-wordpress-shell/images/img_coming-soon.png" alt="coming soon" />
 
 		<dl id="company-address" class="vcard">
