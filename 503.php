@@ -16,10 +16,17 @@
 	<link rel="copyright" href="#copyright" /> 
 	<link rel="icon" href="/favicon.ico" type="image/x-icon" />  
 	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+
+	<script type="text/JavaScript" src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+
+	<!-- add your 503 (maintenance or coming soon page) styles here -->
 	
-	<!-- add your 503 (maintenance or coming soon page) styles below -->
 	<style>
-		html, body { background: #EEE; color: #333; }
+
+		html { background: #E0BB2B; color: #333; }
+		body { background: #E0BB2B; text-align: center; font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; font-weight: 300; }
+		
+		h1 { position: absolute; left: -999em; }
 
 		/* center stuff */
 		.content { height: 100%; height: 100%; }
@@ -40,7 +47,9 @@
 
 <body>
 
-	<img src="/wp-content/themes/theme_condensed/images/img_coming-soon.png" alt="coming soon" />
+	<!--BEGIN: Content -->
+	<div id="content" class="clear-fix" role="main">
+
 		<!-- coming soon image -->
 		<img class="abs-center" src="/wp-content/themes/html5-responsive-wordpress-shell/images/img_coming-soon.png" alt="coming soon" />
 
@@ -56,6 +65,9 @@
 			<dd class="email"><a href="mailto:email@address.com">email@address.com</a></dd>
 
 		</dl>
+
+	</div>
+	<!--END: Content-->
 
 </body>
 
