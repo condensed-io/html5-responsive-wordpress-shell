@@ -20,13 +20,35 @@
 	<!-- add your 503 (maintenance or coming soon page) styles below -->
 	<style>
 		html, body { background: #EEE; color: #333; }
+
+		/* format the address */
+		#company-address { position: absolute; bottom: 1em; right: 0; font-size: .8em; }
+		#company-address dt, #company-address dd { display: inline-block; margin: 0 1em; }
+		#company-address dt:before { content: "\00a9 \0000a0"; }
+		#company-address .locality:after { content: ","; }
+
+
 	</style>
+
+
 
 </head>
 
 <body>
 
 	<img src="/wp-content/themes/theme_condensed/images/img_coming-soon.png" alt="coming soon" />
+		<dl id="company-address" class="vcard">
+
+			<dt class="org fn">company name</dt>
+
+			<dd class="adr">
+				<span class="locality">City</span>
+				<span class="region">State</span>
+			</dd>
+			<dd class="tel">phone number</dd>
+			<dd class="email"><a href="mailto:email@address.com">email@address.com</a></dd>
+
+		</dl>
 
 </body>
 
