@@ -30,6 +30,9 @@
 
 		/* center stuff */
 		.content { height: 100%; height: 100%; }
+		#content { letter-spacing: .1em; }
+
+		/* size the image */
 		.abs-center { max-width: 60%; }
 
 		/* format the address */
