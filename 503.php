@@ -28,8 +28,6 @@
 		
 		h1 { position: absolute; left: -999em; }
 
-		/* center stuff */
-		.content { height: 100%; height: 100%; }
 		#content { letter-spacing: .1em; }
 
 		/* size the image */
@@ -53,7 +51,6 @@
 	<!--BEGIN: Content -->
 	<div id="content" class="clear-fix" role="main">
 
-		<!-- coming soon image -->
 		<!-- coming soon image ~ should be roughly 1000px wide ** don't put the width in the image tag below ** -->
 		<img class="abs-center" src="/wp-content/themes/html5-responsive-wordpress-shell/images/img_coming-soon.png" alt="coming soon" />
 
