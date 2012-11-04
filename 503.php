@@ -11,6 +11,9 @@
 	<title><?php bloginfo('name'); ?></title>
 
 	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	
+	<!--Forces latest IE rendering engine & chrome frame-->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 
 	<link rel="copyright" href="#copyright" /> 
 	<link rel="icon" href="/favicon.ico" type="image/x-icon" />  
@@ -25,6 +28,9 @@
 
 		html { background: #E0BB2B; color: #333; }
 		body { background: #E0BB2B; text-align: center; font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; font-weight: 300; }
+		
+		/* apply a natural box layout model to all elements - http://paulirish.com/2012/box-sizing-border-box-ftw/ */
+		* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
 		
 		h1 { position: absolute; left: -999em; }
 
