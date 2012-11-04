@@ -12,8 +12,6 @@
 
 	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 
-	<title><?php bloginfo('name'); ?></title>
-
 	<link rel="copyright" href="#copyright" /> 
 	<link rel="icon" href="/favicon.ico" type="image/x-icon" />  
 	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
