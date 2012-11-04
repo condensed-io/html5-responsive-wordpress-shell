@@ -18,6 +18,7 @@
 	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
 
 	<script type="text/JavaScript" src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+	<script type="text/JavaScript" src="<?php bloginfo('template_url'); ?>/js/modernizr.custom.29027.js"></script>
 
 	<!-- add your 503 (maintenance or coming soon page) styles here -->
 	
