@@ -36,12 +36,14 @@ $android = strpos($_SERVER['HTTP_USER_AGENT'],"Android");
 	<!--[if IE 7]><link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/css/ie7.css" media="screen" /><![endif]-->
 	<!--END: IE Specific Hacks-->
 	
+	<!--REMOVE this viewport code if you are making a site that is NOT responsive-->
 	<?php if ($iphone == true) : // conditional iPhone and Android code ?>
 		<link href="<?php echo $templateURL; ?>/css/iphone.css" type="text/css" rel="stylesheet" />
 		<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0;" />
 	<?php elseif ($android == true) : ?>
 		<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0;" />
 	<?php endif; ?>
+	<!--REMOVE this viewport code if you are making a site that is NOT responsive-->
 	
 	<?php wp_head(); // wp_head hook for Plugins ~ always keep this just before the /head tag ?>
 
