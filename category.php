@@ -26,7 +26,7 @@ if ($disableSidebarMain !== 'true'): ?>
 			<article <?php post_class() ?> id="post-<?php the_ID(); ?>">
 				
 				<header>
-					<h1><a href="<?php the_permalink(); ?>" rel="bookmark" title='Click to read: "<?php strip_tags(the_title()); ?>"'><?php the_title(); ?></a></h2>
+					<h1><a href="<?php the_permalink(); ?>" rel="bookmark" title='Click to read: "<?php strip_tags(the_title()); ?>"'><?php the_title(); ?></a></h1>
 					<p class="post-date"><?php the_time('F jS, Y') ?> &#8212; <?php the_category(', ') ?></p>
 				</header>
 				
