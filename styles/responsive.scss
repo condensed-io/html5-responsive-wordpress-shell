@@ -5,7 +5,9 @@
 @media screen and (min-width: 100px) and (max-width: 480px) {
 	
 	/* Shows media query size on the top of the browser window -- DELETE before making site live */
-	body:before { content: "100-480"; left: 1em; position: absolute; top: 1em; z-index: 999; }
+	body:before { @include alert("100-480"); }
+
+	#page-wrapper { padding: 0 5%; }
 
 	/* add your styles here */
 
@@ -19,7 +21,7 @@
 @media screen and (min-width: 480px) and (max-width: 600px) {
 	
 	/* Shows media query size on the top of the browser window -- DELETE before making site live */
-	body:before { content: "480-600"; left: 1em; position: absolute; top: 1em; z-index: 999; }
+	body:before { @include alert("480-600"); }
 
 	/* add your styles here */
 
@@ -33,7 +35,7 @@
 @media screen and (min-width: 600px) and (max-width: 750px) {
 
 	/* Shows media query size on the top of the browser window -- DELETE before making site live */
-	body:before { content: "600-750"; left: 1em; position: absolute; top: 1em; z-index: 999; }
+	body:before { @include alert("600-750"); }
 
 	/* add your styles here */
 
@@ -47,7 +49,7 @@
 @media screen and (min-width: 750px) and (max-width: 980px) {
 
 	/* Shows media query size on the top of the browser window -- DELETE before making site live */
-	body:before { content: "750-980"; left: 1em; position: absolute; top: 1em; z-index: 999; }
+	body:before { @include alert("750-980"); }
 
 	/* add your styles here */
 
@@ -62,7 +64,7 @@
 @media screen and (min-width: 980px) and (max-width: 1200px) {
 
 	/* Shows media query size on the top of the browser window -- DELETE before making site live */
-	body:before { content: "980-1200"; left: 1em; position: absolute; top: 1em; z-index: 999; }
+	body:before { @include alert("980-1200"); }
 
 	/* add your styles here */
 
@@ -77,7 +79,7 @@
 @media screen and (min-width: 1200px) {
 
 	/* Shows media query size on the top of the browser window -- DELETE before making site live */
-	body:before { content: "1200 and up"; left: 1em; position: absolute; top: 1em; z-index: 999; }
+	body:before { @include alert("1200 and up"); }
 
 	/* add your styles here */
 
