@@ -1,7 +1,18 @@
 // --- Color References
 
-$light-blue: #39C;
+$light-blue: #CAF3FF;
+$brand-blue: #39C;
+$brand-blue2: #08BDE6;
+$brand-orange: #FC0;
+$cream: #F9F4EB;
+$dark-grey: #333;
 
-$background: #EEE;
 
-$grey: #CCC;
+// assign the colors to symantic variable names that get added into the other files
+
+$bkg-page: $cream;
+$text-page: $dark-grey;
+$link-default: $brand-blue;
+$link-active: $brand-orange;
+$bkg-nav: $light-blue;
+$txt-nav: $brand-blue;
