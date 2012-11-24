@@ -4,8 +4,8 @@
 	/*--- SITE WIDE ---*/
 
 		/* Set the background and font color for the html and body, if you don't have a different bkg for the body set both to be the same */
-		html { background: $bkg-page; color: $text-page; }
-		body { background: $bkg-page; color: $text-page; }
+		html { background: $page-bkg; color: $page-txt; }
+		body { background: $page-bkg; color: $page-txt; }
 
 		/* Links */
 		a:link, a:visited { color: $link-default; text-decoration: underline; }
@@ -27,11 +27,11 @@
 		#main-nav a { font-size: 1.2em; text-decoration: none; display: inline-block; line-height: 1.8em; margin: 0 3px 3px 0; padding: 1em 2em; -moz-border-radius: 10px; -khtml-border-radius: 10px; -webkit-border-radius: 10px; border-radius: 10px; }
 	
 		/* Nav Links*/
-		#main-nav a:link, #main-nav a:visited  { color: darken($nav-up, 10%); background: $nav-up; }
-		#main-nav a:hover, #main-nav a:active, #main-nav a:focus { color: darken($nav-dn, 10%); background: $nav-dn; text-decoration: underline; }
+		#main-nav a:link, #main-nav a:visited  { color: darken($nav-up, 40%); background: $nav-up; }
+		#main-nav a:hover, #main-nav a:active, #main-nav a:focus { color: darken($nav-dn, 20%); background: $nav-dn; text-decoration: underline; }
 
 		/* DownStates*/
-		#main-nav .current_page_item a { color: #C63 !important; background: #FFED66; cursor: default; }
+		#main-nav .current_page_item a { color: lighten($nav-current, 40%) !important; background: $nav-current; cursor: default; }
 	
 		
 	/*--- CONTENT AREA ---*/
