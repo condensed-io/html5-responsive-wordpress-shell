@@ -7,8 +7,6 @@
 	/* Shows media query size on the top of the browser window -- DELETE before making site live */
 	body:before { @include alert("100-480"); }
 
-	#page-wrapper { padding: 0 5%; }
-
 	/* add your styles here */
 
 } /* END: 100-480 media query - don't delete this bracket */
