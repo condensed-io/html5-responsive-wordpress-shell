@@ -1,6 +1,8 @@
 HTML5 Wordpress Shell
 ---------------------
 
+NEW: SASS version in branches
+
 This *Shell* theme can freely be used to rapidly develop websites using clean HTML5 that generates a well thought out document outline.
 
 The theme was created and is actively maintained by [mimoYmima] a web design studio in Brooklyn, New York.
