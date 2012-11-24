@@ -12,7 +12,7 @@
 	position: absolute;
 	top: 1em;
 	z-index: 999;
-	background: darken($bkg-page, 10%);
+	background: darken($page-bkg, 10%);
 	padding: 1em 2em;
 	@include rounded(2em);
 }
