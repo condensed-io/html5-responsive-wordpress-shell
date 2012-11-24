@@ -27,8 +27,8 @@
 		#main-nav a { font-size: 1.2em; text-decoration: none; display: inline-block; line-height: 1.8em; margin: 0 3px 3px 0; padding: 1em 2em; -moz-border-radius: 10px; -khtml-border-radius: 10px; -webkit-border-radius: 10px; border-radius: 10px; }
 	
 		/* Nav Links*/
-		#main-nav a:link, #main-nav a:visited  { color: $txt-nav; background: $bkg-nav; }
-		#main-nav a:hover, #main-nav a:active, #main-nav a:focus { color: #00A5CB; background: #95E8FF; text-decoration: underline; }
+		#main-nav a:link, #main-nav a:visited  { color: darken($nav-up, 10%); background: $nav-up; }
+		#main-nav a:hover, #main-nav a:active, #main-nav a:focus { color: darken($nav-dn, 10%); background: $nav-dn; text-decoration: underline; }
 
 		/* DownStates*/
 		#main-nav .current_page_item a { color: #C63 !important; background: #FFED66; cursor: default; }
