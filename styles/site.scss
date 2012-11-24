@@ -1,20 +1,18 @@
-/*--------------------------------------------------------------------------------------------------*/
-/* BASE STYLING: style 320px first and go up from there using media query areas below */
-/*--------------------------------------------------------------------------------------------------*/
+// base styles before adding responsive layouts
 
 
 	/*--- SITE WIDE ---*/
 
 		/* Set the background and font color for the html and body, if you don't have a different bkg for the body set both to be the same */
-		html { background: #FFF; color: #333; }
-		body { background: #FFF; color: #333; }
+		html { background: $bkg-page; color: $text-page; }
+		body { background: $bkg-page; color: $text-page; }
 
 		/* Headings */
 		h1, h2, h3, h4, h5, h6 { font-weight: 500; font-family: 'StMarieThin', 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', helvetica, sans-serif; }
 
 		/* Links */
-		a:link, a:visited { color: #39C; text-decoration: underline; }
-		a:hover, a:active, a:focus { color: #F90; text-decoration: none; }
+		a:link, a:visited { color: $link-default; text-decoration: underline; }
+		a:hover, a:active, a:focus { color: $link-active; text-decoration: none; }
 	
 		/* Hide these elements but keep them accessible */
 		.access-hide { position: absolute; left: -999em; }
@@ -26,13 +24,13 @@
 	/*--- HEADER ---*/
 	
 		#site-header #site-title { }
-		#site-header #site-description {  }	
+		#site-header #site-description { }	
 
 		/* Nav */
 		#main-nav a { font-size: 1.2em; text-decoration: none; display: inline-block; line-height: 1.8em; margin: 0 3px 3px 0; padding: 1em 2em; -moz-border-radius: 10px; -khtml-border-radius: 10px; -webkit-border-radius: 10px; border-radius: 10px; }
 	
 		/* Nav Links*/
-		#main-nav a:link, #main-nav a:visited  { color: #08BDE6; background: #CAF3FF; }
+		#main-nav a:link, #main-nav a:visited  { color: $txt-nav; background: $bkg-nav; }
 		#main-nav a:hover, #main-nav a:active, #main-nav a:focus { color: #00A5CB; background: #95E8FF; text-decoration: underline; }
 
 		/* DownStates*/
