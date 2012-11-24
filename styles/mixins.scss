@@ -1,0 +1,18 @@
+@mixin rounded($radius: 0.5em) {
+	-webkit-border-radius: $radius;
+	-moz-border-radius: $radius;
+	-ms-border-radius: $radius;
+	-o-border-radius: $radius;
+	border-radius: $radius;
+}
+
+@mixin alert($statement) {
+	content: $statement;
+	right: 1em;
+	position: absolute;
+	top: 1em;
+	z-index: 999;
+	background: darken($bkg-page, 10%);
+	padding: 1em 2em;
+	@include rounded(2em);
+}
