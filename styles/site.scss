@@ -7,9 +7,6 @@
 		html { background: $bkg-page; color: $text-page; }
 		body { background: $bkg-page; color: $text-page; }
 
-		/* Headings */
-		h1, h2, h3, h4, h5, h6 { font-weight: 500; font-family: 'StMarieThin', 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', helvetica, sans-serif; }
-
 		/* Links */
 		a:link, a:visited { color: $link-default; text-decoration: underline; }
 		a:hover, a:active, a:focus { color: $link-active; text-decoration: none; }
