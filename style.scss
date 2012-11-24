@@ -1,0 +1,30 @@
+/*!
+Theme Name: html5 shell by mimoYmima.com
+Theme URI: http://html5.mimoymima.com/
+Description: a Framework for rapidly developing HTML5 based WordPress Themes
+Version: 2.5
+Author: Brent Lagerman
+Author URI: http://html5.mimoymima.com/
+*/
+
+// reset + general styles
+@import "./styles/base.scss";
+
+// general re-usable classes
+@import "./styles/classes.scss";
+
+// colors used through the site
+@import "./styles/colors.scss";
+
+// typography
+@import "./styles/type.scss";
+
+// site specific styles
+@import "./styles/site.scss";
+
+// page specific styles
+@import "./styles/pages.scss";
+
+// responsive layouts
+@import "./styles/responsive.scss";
+

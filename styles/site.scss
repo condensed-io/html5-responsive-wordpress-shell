@@ -1,0 +1,77 @@
+/*--------------------------------------------------------------------------------------------------*/
+/* BASE STYLING: style 320px first and go up from there using media query areas below */
+/*--------------------------------------------------------------------------------------------------*/
+
+
+	/*--- SITE WIDE ---*/
+
+		/* Set the background and font color for the html and body, if you don't have a different bkg for the body set both to be the same */
+		html { background: #FFF; color: #333; }
+		body { background: #FFF; color: #333; }
+
+		/* Headings */
+		h1, h2, h3, h4, h5, h6 { font-weight: 500; font-family: 'StMarieThin', 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', helvetica, sans-serif; }
+
+		/* Links */
+		a:link, a:visited { color: #39C; text-decoration: underline; }
+		a:hover, a:active, a:focus { color: #F90; text-decoration: none; }
+	
+		/* Hide these elements but keep them accessible */
+		.access-hide { position: absolute; left: -999em; }
+
+		/* page-wrapper */
+		#page-wrapper { }
+	
+	
+	/*--- HEADER ---*/
+	
+		#site-header #site-title { }
+		#site-header #site-description {  }	
+
+		/* Nav */
+		#main-nav a { font-size: 1.2em; text-decoration: none; display: inline-block; line-height: 1.8em; margin: 0 3px 3px 0; padding: 1em 2em; -moz-border-radius: 10px; -khtml-border-radius: 10px; -webkit-border-radius: 10px; border-radius: 10px; }
+	
+		/* Nav Links*/
+		#main-nav a:link, #main-nav a:visited  { color: #08BDE6; background: #CAF3FF; }
+		#main-nav a:hover, #main-nav a:active, #main-nav a:focus { color: #00A5CB; background: #95E8FF; text-decoration: underline; }
+
+		/* DownStates*/
+		#main-nav .current_page_item a { color: #C63 !important; background: #FFED66; cursor: default; }
+	
+		
+	/*--- CONTENT AREA ---*/
+	
+		#content { }
+		#content em { font-style: italic; }
+		
+		/* Page Nav */
+		#page-nav a { float: right; padding: .5em 2em; margin: 1em; }
+
+		/* Page */
+		.page {}
+
+		/* Posts */
+		.post {}
+
+		/* Single */
+		.single-template {}
+			/* Comments using Intense Debate */
+		.post-meta-data	{ margin: 1em 0; }
+	
+	
+	/*--- SIDEBAR ~ MAIN ---*/
+
+		#main-sidebar ul { list-style-position: inside; }
+	
+	
+	/*--- SIDEBAR ~ FOOTER ---*/
+
+		#footer-sidebar ul { list-style-position: inside; }
+
+
+	/*--- FOOTER ---*/
+
+		#footer { clear: both; padding-bottom: 20px; text-align: right; }
+			
+		/* Credit */
+		#footer #site-credits a { letter-spacing: 1px; }
