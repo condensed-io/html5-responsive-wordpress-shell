@@ -97,14 +97,16 @@ function get_the_custom_excerpt($length){
     
     // // if you want to add more just keep adding them like this:
     // register_sidebar(array(
-    //     'id' => 'sidebar-single',
-    //     'name' => 'Sidebar: Single',
-    //     'description' => 'The second (secondary) sidebar.',
+    //     'id' => 'sidebar-footer',
+    //     'name' => 'Sidebar: Footer',
+    //     'description' => 'Footer',
     //     'before_widget' => '<div id="%1$s" class="widget %2$s">',
     //     'after_widget' => '</div>',
     //     'before_title' => '<h4 class="widgettitle">',
     //     'after_title' => '</h4>',
     // ));
+
+
 
 // This function is used to get the slug of the page
 	function get_the_slug() {
