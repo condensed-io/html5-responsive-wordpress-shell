@@ -43,31 +43,31 @@ if ($disableSidebarMain !== 'true'): ?>
 
 		<?php endif; ?>
 	
+		<?php while (have_posts()) : the_post(); ?>
+
 		<!--BEGIN: Archive-->
 		<article <?php post_class() ?> id="post-<?php the_ID(); ?>">
 		
-			<?php while (have_posts()) : the_post(); ?>
-				
-				<h2 id="post-<?php the_ID(); ?>"><a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>"><?php the_title(); ?></a></h2>
-				
-				<small><?php the_time('l, F jS, Y') ?></small>
-	
-				<div class="entry">
-					<?php the_content() ?>
-				</div>
-	
-				<?php if(!is_tag()): // don't show this stuff on tag pages '?>
-				<!--BEGIN: Post Meta Data-->
-				<footer class="post-meta-data">
-					<ul class="no-bullet">
-						<li class="add-comment"><?php comments_popup_link('Share your comments', '1 Comment', '% Comments'); ?></li>
-						<li>Posted in <?php the_category(', ') ?></li>
-						<li><?php edit_post_link('[Edit]', '<small>', '</small>'); ?></li>
-						<li><?php the_tags('Tags: ', ', ', '<br />'); ?></li>
-					</ul>
-				</footer>
-				<!--END: Post Meta Data-->
-				<?php endif; ?>
+			<h2 id="post-<?php the_ID(); ?>"><a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>"><?php the_title(); ?></a></h2>
+			
+			<small><?php the_time('l, F jS, Y') ?></small>
+
+			<div class="entry">
+				<?php the_content() ?>
+			</div>
+
+			<?php if(!is_tag()): // don't show this stuff on tag pages '?>
+			<!--BEGIN: Post Meta Data-->
+			<footer class="post-meta-data">
+				<ul class="no-bullet">
+					<li class="add-comment"><?php comments_popup_link('Share your comments', '1 Comment', '% Comments'); ?></li>
+					<li>Posted in <?php the_category(', ') ?></li>
+					<li><?php edit_post_link('[Edit]', '<small>', '</small>'); ?></li>
+					<li><?php the_tags('Tags: ', ', ', '<br />'); ?></li>
+				</ul>
+			</footer>
+			<!--END: Post Meta Data-->
+			<?php endif; ?>
 			
 		</article>
 		<!--END: Archive-->
