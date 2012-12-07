@@ -106,12 +106,6 @@ function get_the_custom_excerpt($length){
     //     'after_title' => '</h4>',
     // ));
 
-// Wigetized sidebar, we're registering two, you can add as many as you want
-	if ( function_exists('register_sidebar') )
-		register_sidebar(array('name'=>'Sidebar - Main', 'id' => 'sidebar-main'));
-//		register_sidebar(array('name'=>'Sidebar - Footer', 'id' => 'sidebar-footer')); // you can register more by putting them on their own lines
-
-
 // This function is used to get the slug of the page
 	function get_the_slug() {
 		global $post;
