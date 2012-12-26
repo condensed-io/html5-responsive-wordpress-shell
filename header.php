@@ -73,5 +73,5 @@ $android = strpos($_SERVER['HTTP_USER_AGENT'],"Android");
 
 		<nav id="main-nav" role="navigation">
 			<h1 class="access-hide">Main Navigation</h1>
-			<?php wp_nav_menu('menu=mainNav'); // create the mainNav menu inside Appearance menus and go to town -- for more on menus see: http://templatic.com/news/wordpress-3-0-menu-management ?>
+			<?php //add a mainNav menu in the admin area then remove this comment// wp_nav_menu('menu=mainNav'); // create the mainNav menu inside Appearance menus and go to town -- for more on menus see: http://templatic.com/news/wordpress-3-0-menu-management ?>
 		</nav>
