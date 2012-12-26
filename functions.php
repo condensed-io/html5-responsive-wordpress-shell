@@ -33,9 +33,6 @@ function add_first_and_last($output) {
 }
 add_filter('wp_nav_menu', 'add_first_and_last');
 
-// Allows you to make custom templates for posts with name structure like single-postID.php (the id is the number not the name) see: http://www.nathanrice.net/blog/wordpress-single-post-templates/
-add_filter('single_template', create_function('$t', 'foreach( (array) get_the_category() as $cat ) { if ( file_exists(TEMPLATEPATH . "/single-{$cat->term_id}.php") ) return TEMPLATEPATH . "/single-{$cat->term_id}.php"; } return $t;' ));
-
 
 // Removes tags generated in the WordPress Head that we don't use, you could read up and re-enable them if you think they're needed
 remove_action('wp_head', 'wlwmanifest_link');
