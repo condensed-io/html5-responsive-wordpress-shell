@@ -16,25 +16,6 @@
 	/*--- FORMS ---*/
 		#search-form input[type='text'] { width: 10em; }
 
-	/*--- UTILITY ---*/
-
-		/* Clear Fixes - two methods, clear-fix is attached to the element you want to clear, .clear-all you can attach to a hr or br tag to clear the item before it as a last resort when you're in a hurry */
-		.clear-fix:before,
-		.clear-fix:after { content: ""; display: table; } 
-		.clear-fix:after { clear: both; }
-
-		.clear-all { visibility: hidden; clear: both; margin: 0 !important; padding: 0 !important; font-size: 0; height: 1px; }
-
-		/* WordPress WYSIWYG alignment -- when you put in images that span the entire width of the content area remove the width and height */
-		img.aligncenter { max-width: 100%; display: block; margin: 5px auto; }
-	    img.alignright { padding: 4px; margin: 0 0 2px 7px; display: inline; }
-	    img.alignleft { padding: 4px; margin: 0 7px 2px 0; display: inline; }
-	    .alignright { float: right; }
-		.alignleft { float: left; }
-		
-		/* Warnings */
-		.sys { text-align: left }
-		.warn { }
 
 	/*--- JQUERY RELATED --- */
 
@@ -59,3 +40,46 @@
 	
 		/* Hide these items when Javascript is active */
 		.js #js-ind, .js .hide { display: none; }
+
+
+	/*--- GLOBAL STYLES ---*/
+
+		/* Set the background and font color for the html and body, if you don't have a different bkg for the body set both to be the same */
+		html { background: $page-bkg; color: $page-txt; }
+		body { background: $page-bkg; color: $page-txt; }
+
+		/* Links */
+		a:link, a:visited { color: $link-default; text-decoration: underline; }
+		a:hover, a:active, a:focus { color: $link-active; text-decoration: none; }
+	
+		/* Hide these elements but keep them accessible */
+		.access-hide { position: absolute; left: -999em; }
+
+		/* page-wrapper */
+		#page-wrapper { padding: 0 5%; }
+
+
+	/*--- UTILITY ---*/
+
+		/* Clear Fixes - two methods, clear-fix is attached to the element you want to clear, .clear-all you can attach to a hr or br tag to clear the item before it as a last resort when you're in a hurry */
+		.clear-fix:before,
+		.clear-fix:after { content: ""; display: table; } 
+		.clear-fix:after { clear: both; }
+
+		.clear-all { visibility: hidden; clear: both; margin: 0 !important; padding: 0 !important; font-size: 0; height: 1px; }
+		
+		/* Warnings */
+		.sys { text-align: left }
+		.warn { }
+
+
+	/*--- WordPress ---*/
+		
+		/* WordPress WYSIWYG alignment -- when you put in images that span the entire width of the content area remove the width and height */
+		img.aligncenter { max-width: 100%; display: block; margin: 5px auto; }
+	    img.alignright { padding: 4px; margin: 0 0 2px 7px; display: inline; }
+	    img.alignleft { padding: 4px; margin: 0 7px 2px 0; display: inline; }
+	    .alignright { float: right; }
+		.alignleft { float: left; }
+
+		.widget { margin-bottom: 2em; }
