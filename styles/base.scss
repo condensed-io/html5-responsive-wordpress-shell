@@ -32,11 +32,10 @@
 			.header-hidden { background: url('./images/icon_link_plus_minus.png') no-repeat 0px 3px; height: -14px; }
 
 		/* Indicators */
-		.indicator { position: absolute; z-index: 100; text-align: right; left: 0; }
-		.indicator a { width: 7em; background-color: #FF0; display: block; font-weight: bold; font-size: 12px !important; text-transform: uppercase; text-decoration: none; padding: .5em 1em; }
+		.indicator { position: absolute; z-index: 100; text-align: center; left: 0; top: 0; }
+		.indicator a { width: 20em; background-color: #FF0; display: block; text-transform: uppercase; text-decoration: none; padding: 1em; }
 		.indicator a:link, .indicator a:visited { color: black; }
 		.indicator a:hover, .indicator a:focus, .indicator a:active { color: black; background-color: #FFF; text-decoration: none; cursor: pointer; }
-		#js-ind { top: 20em; }
 	
 		/* Hide these items when Javascript is active */
 		.js #js-ind, .js .hide { display: none; }
