@@ -6,7 +6,12 @@ do not add layout here, add layout to responsive.scss
 
 	/*-- Forms --*/
 		#search-form input[type='text'] { width: 10em; }
-		input[type='text'] { @include rounded(.5em); }
+		
+		// Text Inputs
+		input[type='text'] {
+			@include rounded(.5em);
+			border: 1px solid $borders;
+		}
 	
 	
 	/*--- Page Wrapper ---*/
