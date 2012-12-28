@@ -11,14 +11,14 @@ Author URI: http://html5.mimoymima.com/
 // mixins
 @import "./styles/mixins.scss";
 
+// colors used through the site
+@import "./styles/colors.scss";
+
 // reset + general styles
 @import "./styles/base.scss";
 
 // general re-usable classes
 @import "./styles/classes.scss";
-
-// colors used through the site
-@import "./styles/colors.scss";
 
 // typography
 @import "./styles/type.scss";
