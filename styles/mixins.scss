@@ -1,9 +1,8 @@
-// browser friendly rounded corners
+// rounded corners
 @mixin rounded($radius: 0.5em) {
 	-webkit-border-radius: $radius;
 	-moz-border-radius: $radius;
-	-ms-border-radius: $radius;
-	-o-border-radius: $radius;
+	-khtml-border-radius: $radius;
 	border-radius: $radius;
 }
 
