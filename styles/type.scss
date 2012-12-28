@@ -1,3 +1,10 @@
+/*--- TEXT ---*/
+	
+	/* Font stacks - some premade stacks you could use, by default we're using the sans stack in the 'base styling' section below */
+	.serif { font-family: Baskerville, Palatino, "Palatino Linotype", "Hoefler Text", "Times New Roman", times, serif; } /*cambria, cochin ??*/
+	.monospace { font-family: 'courier new', courier, Consolas, Menlo, Monaco, 'Lucida Console', 'Liberation Mono', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', monospace; }
+	.sans { font-family: 'Helvetica Neue', helvetica, sans-serif; }
+
 /* font-face fonts to load */
 	@font-face { font-family: 'StMarieThin'; src: url('./fonts/StMarie-Thin-webfont.eot'); src: url('./fonts/StMarie-Thin-webfont.eot?#iefix') format('embedded-opentype'), url('./fonts/StMarie-Thin-webfont.woff') format('woff'), url('./fonts/StMarie-Thin-webfont.ttf') format('truetype'), url('./fonts/StMarie-Thin-webfont.svg#StMarieThin') format('svg'); font-weight: normal; font-style: normal; }
 
