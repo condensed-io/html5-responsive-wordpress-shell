@@ -8,7 +8,7 @@
 
 
 	/*--- CODE ---*/
-		code { background-color: #2A410B !important; font-family: 'Andale Mono', 'Lucida Console', "courier new", courier, monospace; background-color: #069; color: #FFF; padding: .5em; -moz-border-radius: 5px; -khtml-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px; }
+		code { background-color: $code-bkg; font-family: 'Andale Mono', 'Lucida Console', "courier new", courier, monospace; background-color: #069; color: #FFF; padding: .5em; -moz-border-radius: 5px; -khtml-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px; }
 		pre code { line-height: 130%; display: block; padding: 1em; margin: 2em 0; overflow: auto; }
 		pre { margin: 1em; }
 
