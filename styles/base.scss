@@ -1,80 +1,72 @@
-/* Base is for standard things that don't change from project to project */
+/*
+base.scss is for standard things that don't change from project to project
+You probably don't need to make many changes to this file
+*/
+
 
 	/*--- Eric Meyer's Reset CSS v2.0 (http://meyerweb.com/eric/tools/css/reset/) -- http://cssreset.com ---*/
 		html, body, div, span, applet, object, iframe,h1, h2, h3, h4, h5, h6, p, blockquote, pre,a, abbr, acronym, address, big, cite, code,del, dfn, em, img, ins, kbd, q, s, samp,small, strike, strong, sub, sup, tt, var,b, u, i, center,dl, dt, dd, ol, ul, li,fieldset, form, label, legend,table, caption, tbody, tfoot, thead, tr, th, td,article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary,time, mark, audio, video {	margin: 0;	padding: 0;	border: 0;	font-size: 100%; font: inherit;	vertical-align: baseline; } /* HTML5 display-role reset for older browsers */ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {	display: block; } body { line-height: 1; } ol, ul { list-style: none; } blockquote, q { quotes: none;}blockquote:before, blockquote:after,q:before, q:after { content: ''; content: none;} table { border-collapse: collapse; border-spacing: 0; }
 
-	/*--- apply a natural box layout model to all elements - http://paulirish.com/2012/box-sizing-border-box-ftw/ ---*/
+
+	/*--- Apply a natural box layout model to all elements - http://paulirish.com/2012/box-sizing-border-box-ftw/ ---*/
 		* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
 
 
-	/*--- CODE ---*/
-		code { background-color: $code-bkg; font-family: 'Andale Mono', 'Lucida Console', "courier new", courier, monospace; background-color: #069; color: #FFF; padding: .5em; -moz-border-radius: 5px; -khtml-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px; }
-		pre code { line-height: 130%; display: block; padding: 1em; margin: 2em 0; overflow: auto; }
-		pre { margin: 1em; }
+	/*--- jQuery Related --- */
 
+		// PRELOADER: Relies on some js in the functions file and a div in the header (both commented out by default) */
+		// .js div#preloader { position: fixed; left: 0; top: 0; z-index: 999; width: 100%; height: 100%; overflow: visible; background: #c0c0c0 url(./images/loading.gif) no-repeat center center; }*/
 
-	/*--- FORMS ---*/
-		#search-form input[type='text'] { width: 10em; }
-
-
-	/*--- JQUERY RELATED --- */
-
-		/* PRELOADER: Relies on some js in the functions file and a div in the header (both commented out by default) */
-		/*.js div#preloader { position: fixed; left: 0; top: 0; z-index: 999; width: 100%; height: 100%; overflow: visible; background: #c0c0c0 url(./images/loading.gif) no-repeat center center; }*/
-
-		/* Show-Hide Content */
+		// Show-Hide Content
 		.make-link { color: #06F !important; text-decoration: none; margin-bottom: .5em; } 
 		.make-link:hover, .make-link:focus, .make-link:active { cursor: pointer; color: #C60; text-decoration: underline; }
 		ul.hide { margin: 0 0 0 1em !important; padding: 0 !important; }
 
-			/* Adds 'Plus-Minus' sign to header */
+			// Adds 'Plus-Minus' sign to header -- change these for icon font soon
 			.header-shown { background: url('./images/icon_link_plus_minus.png') no-repeat 0 -20px; height: 17px; }
 			.header-hidden { background: url('./images/icon_link_plus_minus.png') no-repeat 0px 3px; height: -14px; }
 
-		/* Indicators */
+		// Indicators
 		.indicator { position: absolute; z-index: 100; text-align: center; left: 0; top: 0; }
 		.indicator a { width: 20em; background-color: #FF0; display: block; text-transform: uppercase; text-decoration: none; padding: 1em; }
 		.indicator a:link, .indicator a:visited { color: black; }
 		.indicator a:hover, .indicator a:focus, .indicator a:active { color: black; background-color: #FFF; text-decoration: none; cursor: pointer; }
 	
-		/* Hide these items when Javascript is active */
+		// Hide these items when Javascript is active
 		.js #js-ind, .js .hide { display: none; }
 
 
-	/*--- GLOBAL STYLES ---*/
+	/*--- Global Styles ---*/
 
-		/* Set the background and font color for the html and body, if you don't have a different bkg for the body set both to be the same */
+		// Set the background and font color for the html and body, if you don't have a different bkg for the body set both to be the same
 		html { background: $page-bkg; color: $page-txt; }
 		body { background: $page-bkg; color: $page-txt; }
 
-		/* Links */
+		// Links
 		a:link, a:visited { color: $link-default; text-decoration: underline; }
 		a:hover, a:active, a:focus { color: $link-active; text-decoration: none; }
 	
-		/* Hide these elements but keep them accessible */
+		// Hide these elements but keep them accessible
 		.access-hide { position: absolute; left: -999em; }
-
-		/* page-wrapper */
-		#page-wrapper { padding: 0 5%; }
 
 
 	/*--- UTILITY ---*/
 
-		/* Clear Fixes - two methods, clear-fix is attached to the element you want to clear, .clear-all you can attach to a hr or br tag to clear the item before it as a last resort when you're in a hurry */
+		// Clear Fixes - two methods, clear-fix is attached to the element you want to clear, .clear-all you can attach to a hr or br tag to clear the item before it as a last resort when you're in a hurry
 		.clear-fix:before,
 		.clear-fix:after { content: ""; display: table; } 
 		.clear-fix:after { clear: both; }
 
 		.clear-all { visibility: hidden; clear: both; margin: 0 !important; padding: 0 !important; font-size: 0; height: 1px; }
 		
-		/* Warnings */
+		// Warnings
 		.sys { text-align: left }
 		.warn { }
 
 
 	/*--- WordPress ---*/
 		
-		/* WordPress WYSIWYG alignment -- when you put in images that span the entire width of the content area remove the width and height */
+		// WordPress WYSIWYG alignment -- when you put in images that span the entire width of the content area remove the width and height
 		img.aligncenter { max-width: 100%; display: block; margin: 5px auto; }
 	    img.alignright { padding: 4px; margin: 0 0 2px 7px; display: inline; }
 	    img.alignleft { padding: 4px; margin: 0 7px 2px 0; display: inline; }
@@ -82,3 +74,8 @@
 		.alignleft { float: left; }
 
 		.widget { margin-bottom: 2em; }
+
+
+
+
+

@@ -1,19 +1,31 @@
-// base styles before adding responsive layouts
+/*
+site.scss is for look and feel
+do not add layout here, add layout to responsive.scss
+*/
+
+
+	/*-- Forms --*/
+		#search-form input[type='text'] { width: 10em; }
+		input[type='text'] { @include rounded(.5em); }
 	
 	
+	/*--- Page Wrapper ---*/
+		#page-wrapper { padding: 0 5%; }
+
+
 	/*--- SITE HEADER ---*/
 	
 		#site-header #site-title { }
 		#site-header #site-description { }	
 
-		/* Nav */
+		// Nav
 		#main-nav a { font-size: 1.2em; text-decoration: none; display: inline-block; line-height: 1.8em; margin: 0 3px 3px 0; padding: 1em 2em; -moz-border-radius: 10px; -khtml-border-radius: 10px; -webkit-border-radius: 10px; border-radius: 10px; }
 	
-		/* Nav Links*/
+		// Nav Links
 		#main-nav a:link, #main-nav a:visited  { color: darken($nav-up, 40%); background: $nav-up; }
 		#main-nav a:hover, #main-nav a:active, #main-nav a:focus { color: darken($nav-dn, 20%); background: $nav-dn; text-decoration: underline; }
 
-		/* DownStates*/
+		// Down States
 		#main-nav .current_page_item a { color: lighten($nav-current, 40%) !important; background: $nav-current; cursor: default; }
 	
 		
@@ -22,19 +34,20 @@
 		#content { }
 		#content em { font-style: italic; }
 		
-		/* Page Nav */
+		// Page Nav
 		#page-nav a { float: right; padding: .5em 2em; margin: 1em; }
 
-		/* Page */
+		// Page
 		.page {}
 
-		/* Posts */
+		// Posts
 		.post {}
 
-		/* Single */
+		// Single
 		.single-template {}
-			/* Comments using Intense Debate */
-		.post-meta-data	{ margin: 1em 0; }
+
+			// Comments use Intense Debate, Disqus or LiveFyre
+			.post-meta-data	{ margin: 1em 0; }
 	
 	
 	/*--- SIDEBAR ~ MAIN ---*/
@@ -52,5 +65,8 @@
 
 		#footer { clear: both; padding-bottom: 20px; text-align: right; }
 			
-		/* Credit */
+		// Credit
 		#footer #site-credits a { letter-spacing: 1px; }
+
+
+

@@ -1,5 +1,4 @@
-// Color Reference
-
+/*--- Color Reference ---*/
 $light-blue: #CAF3FF;
 $blue: #39C;
 $tan: #EBDBBD;
@@ -7,20 +6,23 @@ $orange: #FC0;
 $cream: #F9F4EB;
 $dark-grey: #333;
 
+/*--- Color Assignment---*/
 
+	// Page
+	$page-bkg: $cream;
+	$page-txt: $dark-grey;
 
-// Page
-$page-bkg: $cream;
-$page-txt: $dark-grey;
+	// Links
+	$link-default: $blue;
+	$link-active: $orange;
 
-// Links
-$link-default: $blue;
-$link-active: $orange;
+	// Nav
+	$nav-up: $tan;
+	$nav-dn: $orange;
+	$nav-current: $dark-grey;
 
-// Nav
-$nav-up: $tan;
-$nav-dn: $orange;
-$nav-current: $dark-grey;
+	//Code
+	$code-bkg: $light-blue;
 
-//Code
-$code-bkg: $light-blue;
+	//Headings
+	$h1-h6: $blue;

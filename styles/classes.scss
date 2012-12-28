@@ -1,28 +1,25 @@
-// general classes
-		
+/*--- LISTS ---*/
 
-	/*--- LISTS ---*/
+	// Lists without bullets
+	.no-bullet { list-style-type: none; margin-bottom: 2em; }
+	.no-bullet li { margin-bottom: .5em; }
 
-		/* .no-bullet: list without bullets */
-		.no-bullet { list-style-type: none; margin-bottom: 2em; }
-		.no-bullet li { margin-bottom: .5em; }
+	// Bullet Lists: Nicer formatting for a bulleted list
+	.bullet-list { margin: 1em 0 2em 0; line-height: 150%; }
+	.bullet-list li { margin: 0 2em 1em 2em; list-style-type: square; }
+	.bullet-list li ul { margin: .5em 0 1.5em 0; }
+	.bullet-list li ul li { list-style-type: circle; margin: 0 2em .5em 2em; }
 
-		/* .bullet-list: nicer formatting for a bulleted list */
-		.bullet-list { margin: 1em 0 2em 0; line-height: 150%; }
-		.bullet-list li { margin: 0 2em 1em 2em; list-style-type: square; }
-		.bullet-list li ul { margin: .5em 0 1.5em 0; }
-		.bullet-list li ul li { list-style-type: circle; margin: 0 2em .5em 2em; }
+	/* Horizontal Lists: Used to put a list inline (horizontal) and get rid of the bullets */
+	.horiz-list ul { float: left; list-style-type: none; }
+	.horiz-list li { float: left; display: inline; }
+	.horiz-list li a { display: block; float: left; width: auto;  }
 
-		/* .horiz-list: Used to put a list inline (horizontal) and get rid of the bullets */
-		.horiz-list ul { float: left; list-style-type: none; }
-		.horiz-list li { float: left; display: inline; }
-		.horiz-list li a { display: block; float: left; width: auto;  }
+	/* Link Lists */
+	.link-list li { list-style-type: none; }
+	li.link-list a, ul.link-list li a { display: block; background: url(./images/icon_link_arrow.png) 0px 8px no-repeat; padding-left: 20px; margin-left: 20px;  }
 
-		/* .link-list */
-		.link-list li { list-style-type: none; }
-		li.link-list a, ul.link-list li a { display: block; background: url(./images/icon_link_arrow.png) 0px 8px no-repeat; padding-left: 20px; margin-left: 20px;  }
-
-		/* .pdf-list */
-		.pdf-link { padding-left: 20px; margin-left: 5px; }
-		.pdf-list li { list-style-type: none; }
-		li.pdf-list a, ul.pdf-list li a { display: block; background: url(./images/icon_pdf_sm.png) 0 3px no-repeat; padding-left: 20px; margin-left: 20px; }
+	/* PDF Lists */
+	.pdf-link { padding-left: 20px; margin-left: 5px; }
+	.pdf-list li { list-style-type: none; }
+	li.pdf-list a, ul.pdf-list li a { display: block; background: url(./images/icon_pdf_sm.png) 0 3px no-repeat; padding-left: 20px; margin-left: 20px; }
