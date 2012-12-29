@@ -63,5 +63,5 @@
 		<!-- You will need to create the mainNav menu inside Appearance menus ~ for more on menus see: http://templatic.com/news/wordpress-3-0-menu-management -->
 		<nav id="main-nav" role="navigation">
 			<h1 class="access-hide">Main Navigation</h1>
-			<?php //add a mainNav menu in the admin area then remove this comment// wp_nav_menu(array('menu' => 'mainNav', 'menu_class' => 'horiz-list'); ?>
+			<?php wp_nav_menu(array('menu' => 'mainNav', 'menu_class' => 'horiz-list')); ?>
 		</nav>
