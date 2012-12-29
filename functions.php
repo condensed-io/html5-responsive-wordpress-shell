@@ -60,14 +60,17 @@ like this:
 	add_action('init', 'my_init_method');
 
 
-// Activates menu features
-	if (function_exists('add_theme_support')) {
-	    add_theme_support('menus');
-	}
+// Add theme support
+    
+if (function_exists('add_theme_support')) {
+    
+    // Activates menu features
+    add_theme_support('menus');
+    
+    // Activates Featured Image functions
+    add_theme_support( 'post-thumbnails' );
 
-
-// Activates Featured Image function
-	add_theme_support( 'post-thumbnails' );
+}
 
 
 // Removes the automatic paragraph tags from the excerpt, we leave it on for the content and have a custom field you can use to turn it off on a page by page basis --> wpautop = false
