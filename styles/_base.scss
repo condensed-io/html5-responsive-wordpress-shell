@@ -4,15 +4,27 @@ You probably don't need to make many changes to this file
 */
 
 
-	/*--- Eric Meyer's Reset CSS v2.0 (http://meyerweb.com/eric/tools/css/reset/) -- http://cssreset.com ---*/
+	/*--- RESET CSS v2.0 by Eric Meyer (http://meyerweb.com/eric/tools/css/reset/) -- http://cssreset.com ---*/
 		html, body, div, span, applet, object, iframe,h1, h2, h3, h4, h5, h6, p, blockquote, pre,a, abbr, acronym, address, big, cite, code,del, dfn, em, img, ins, kbd, q, s, samp,small, strike, strong, sub, sup, tt, var,b, u, i, center,dl, dt, dd, ol, ul, li,fieldset, form, label, legend,table, caption, tbody, tfoot, thead, tr, th, td,article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary,time, mark, audio, video {	margin: 0;	padding: 0;	border: 0;	font-size: 100%; font: inherit;	vertical-align: baseline; } /* HTML5 display-role reset for older browsers */ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {	display: block; } body { line-height: 1; } ol, ul { list-style: none; } blockquote, q { quotes: none;}blockquote:before, blockquote:after,q:before, q:after { content: ''; content: none;} table { border-collapse: collapse; border-spacing: 0; }
 
 
-	/*--- Apply a natural box layout model to all elements - http://paulirish.com/2012/box-sizing-border-box-ftw/ ---*/
+	/*--- NATURAL BOX LAYOUT MODEL for all elements - http://paulirish.com/2012/box-sizing-border-box-ftw/ ---*/
 		* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
 
 
-	/*--- jQuery Related --- */
+	/*--- WordPress ---*/
+		
+		// WordPress WYSIWYG alignment -- when you put in images that span the entire width of the content area remove the width and height
+		img.aligncenter { max-width: 100%; display: block; margin: 5px auto; }
+	    img.alignright { padding: 4px; margin: 0 0 2px 7px; display: inline; }
+	    img.alignleft { padding: 4px; margin: 0 7px 2px 0; display: inline; }
+	    .alignright { float: right; }
+		.alignleft { float: left; }
+
+		.widget { margin-bottom: 2em; }
+
+
+	/*--- JQUERY RELATED --- */
 
 		// PRELOADER: Relies on some js in the functions file and a div in the header (both commented out by default) */
 		// .js div#preloader { position: fixed; left: 0; top: 0; z-index: 999; width: 100%; height: 100%; overflow: visible; background: #c0c0c0 url(./images/loading.gif) no-repeat center center; }*/
@@ -36,7 +48,7 @@ You probably don't need to make many changes to this file
 		.js #js-ind, .js .hide { display: none; }
 
 
-	/*--- Global Styles ---*/
+	/*--- GLOBAL STYLES ---*/
 
 		// Set the background and font color for the html and body, if you don't have a different bkg for the body set both to be the same
 		html { background: $page-bkg; color: $page-txt; }
@@ -62,20 +74,6 @@ You probably don't need to make many changes to this file
 		// Warnings
 		.sys { text-align: left }
 		.warn { }
-
-
-	/*--- WordPress ---*/
-		
-		// WordPress WYSIWYG alignment -- when you put in images that span the entire width of the content area remove the width and height
-		img.aligncenter { max-width: 100%; display: block; margin: 5px auto; }
-	    img.alignright { padding: 4px; margin: 0 0 2px 7px; display: inline; }
-	    img.alignleft { padding: 4px; margin: 0 7px 2px 0; display: inline; }
-	    .alignright { float: right; }
-		.alignleft { float: left; }
-
-		.widget { margin-bottom: 2em; }
-
-
 
 
 
