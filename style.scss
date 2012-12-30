@@ -9,26 +9,26 @@ Author URI: http://html5.mimoymima.com/
 
 
 // mixins
-@import "./styles/mixins.scss";
+@import "./styles/_mixins.scss";
 
 // colors used through the site
-@import "./styles/colors.scss";
+@import "./styles/_colors.scss";
 
 // reset + general styles
-@import "./styles/base.scss";
+@import "./styles/_base.scss";
 
 // general re-usable classes
-@import "./styles/classes.scss";
+@import "./styles/_classes.scss";
 
 // typography
-@import "./styles/type.scss";
+@import "./styles/_type.scss";
 
 // site specific styles
-@import "./styles/site.scss";
+@import "./styles/_site.scss";
 
 // page specific styles
-@import "./styles/pages.scss";
+@import "./styles/_pages.scss";
 
 // responsive layouts
-@import "./styles/responsive.scss";
+@import "./styles/_responsive.scss";
 
