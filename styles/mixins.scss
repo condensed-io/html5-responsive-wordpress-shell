@@ -9,12 +9,12 @@
 // alert shows in upper right, used for showing the media query sizes
 @mixin alert($statement) {
 	content: $statement;
-	right: 1em;
+	right: .3em;
 	position: absolute;
-	top: .5em;
+	top: .3em;
 	z-index: 999;
-	background: darken($page-bkg, 10%);
-	padding: .5em 2em;
+	background: lighten($header-bkg, 20%);
+	padding: .2em 1.5em;
 	@include rounded(2em);
 }
 
