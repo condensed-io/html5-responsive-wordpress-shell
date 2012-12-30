@@ -59,9 +59,8 @@
 	
 		</header>
 
-		<!-- Main Nav ~ to make vertical instead of horizontal, remove the 'menu-class' horiz_list bit in the array below -->
-		<!-- You will need to create the mainNav menu inside Appearance menus ~ for more on menus see: http://templatic.com/news/wordpress-3-0-menu-management -->
+		<!-- Main Nav ~ to make the menu vertical instead of horizontal remove the menu_class of horiz-list -->
 		<nav id="main-nav" role="navigation">
 			<h1 class="access-hide">Main Navigation</h1>
-			<?php wp_nav_menu(array('menu' => 'mainNav', 'menu_class' => 'horiz-list')); ?>
+			<?php wp_nav_menu(array('menu' => 'mainNav', 'menu_class' => 'horiz-list')); // create the mainNav menu inside Appearance menus and go to town -- for more on menus see: http://templatic.com/news/wordpress-3-0-menu-management ?>
 		</nav>
