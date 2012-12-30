@@ -47,7 +47,7 @@ You probably don't need to make many changes to this file
 		a:hover, a:active, a:focus { color: $link-active; text-decoration: none; }
 	
 		// Hide these elements but keep them accessible
-		.access-hide { position: absolute; left: -999em; }
+		.access-hide { position: absolute; left: -999em; top: -999em; }
 
 
 	/*--- UTILITY ---*/
