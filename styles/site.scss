@@ -14,12 +14,13 @@ do not add layout here, add layout to responsive.scss
 		}
 	
 	
-	/*--- Page Wrapper ---*/
+	/*--- PAGE WRAPPER ---*/
 		#page-wrapper { padding: 0 5%; }
 
 
 	/*--- SITE HEADER ---*/
 	
+		#site-header { background-color: $header-bkg; }
 		#site-header #site-title { }
 		#site-header #site-description { }	
 
