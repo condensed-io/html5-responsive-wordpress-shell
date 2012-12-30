@@ -37,12 +37,10 @@ $android = strpos($_SERVER['HTTP_USER_AGENT'],"Android");
 	<!--END: IE Specific Hacks-->
 	
 	<!--REMOVE this viewport code if you are making a site that is NOT responsive-->
-	<?php if ($iphone == true) : // conditional iPhone and Android code ?>
-		<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0;" />
-	<?php elseif ($android == true) : ?>
+	<?php if ($iphone == true || $android == true || $ipad == true) : ?>
 		<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0;" />
 	<?php endif; ?>
-	<!--REMOVE this viewport code if you are making a site that is NOT responsive-->
+ 	<!--REMOVE this viewport code if you are making a site that is NOT responsive-->
 	
 	<?php wp_head(); // wp_head hook for Plugins ~ always keep this just before the /head tag ?>
 
