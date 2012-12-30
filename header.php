@@ -1,3 +1,10 @@
+<?php
+	// store a few user agent variables
+	$iphone = strpos($_SERVER['HTTP_USER_AGENT'],"iPhone");
+	$ipad = strpos($_SERVER['HTTP_USER_AGENT'],"iPad");
+	$android = strpos($_SERVER['HTTP_USER_AGENT'],"Android");
+?>
+
 <!DOCTYPE html>
 
 <html <?php language_attributes(); ?> class="no-js" xmlns="http://www.w3.org/1999/xhtml" xmlns:fb="http://www.facebook.com/2008/fbml" xmlns:og="http://ogp.me/ns#">
@@ -30,8 +37,10 @@
 	<!--END: IE Specific Hacks-->
 	
 	<!--REMOVE this viewport code if you are making a site that is NOT responsive-->
-	<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0;" />
-	<!--REMOVE this viewport code if you are making a site that is NOT responsive-->
+	<?php if ($iphone == true || $android == true || $ipad == true) : ?>
+		<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0;" />
+	<?php endif; ?>
+ 	<!--REMOVE this viewport code if you are making a site that is NOT responsive-->
 	
 	<?php wp_head(); // wp_head hook for Plugins ~ always keep this just before the /head tag ?>
 
