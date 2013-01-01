@@ -12,7 +12,7 @@ The theme was created and is actively maintained by [mimoYmima] a web design stu
   - Very well thought out HTML5 document structure
   - Fully Search Engine Optimized
   - Responsive Ready, the style.css file has pre-programmed areas for common media queries
-  - [The mother of all body tags]
+  - [a better function for generating body classes]
   - Dynamic sidebar examples
   - Custom sidebar examples
   - [Smart sidebar disable]
@@ -22,5 +22,5 @@ The theme was created and is actively maintained by [mimoYmima] a web design stu
 
   [mimoYmima]: http://mimoymima.com
   [html5.mimoymima.com]: http://html5.mimoymima.com
-  [The mother of all body tags]: http://www.mimoymima.com/2010/03/lab/wordpress-body-tag/
+  [a better function for generating body classes]: http://www.mimoymima.com/2013/01/lab/better-body-class-function-wordpress/
   [Smart sidebar disable]: http://www.mimoymima.com/2010/03/lab/disable-sidebar/

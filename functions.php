@@ -25,6 +25,7 @@
 // }
 // add_action( 'init', 'countries_init' );
 
+
 // Add a 'first' and 'last' class to the first and last menu item pulled from custom menus
 function add_first_and_last($output) {
     $output = preg_replace('/class="menu-item/', 'class="first-menu-item menu-item"', $output, 1);
