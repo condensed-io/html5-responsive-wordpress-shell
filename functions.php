@@ -115,6 +115,26 @@ function get_the_custom_excerpt($length){
 			return "";
 		}
 	}
+
+
+// Body Class Function
+function body_class() {
+
+    $post_parent = get_post($post->post_parent);
+    $parentSlug = $post_parent->post_name;
+    echo $parentSlug." ";
+
+    // echo the name of the template being used
+    global $wp_query;
+    $template_name = get_post_meta( $wp_query->post->ID, '_wp_page_template', true );
+    $tn = str_replace(".php", "", $template_name);
+    echo "template-".$tn." ";
+
+    // echo post name
+    echo $post->post_name;
+
+}
+
 	
 // To REMOVE unused dashboard widgets you can uncomment the next line and customize /includes/remove.php
 // require_once('includes/remove.php');
