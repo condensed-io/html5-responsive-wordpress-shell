@@ -54,22 +54,22 @@ $android = strpos($_SERVER['HTTP_USER_AGENT'],"Android");
 <!--see http://www.mimoymima.com/2010/03/lab/wordpress-body-tag/-->
 <body class="<?php body_class(); ?>">
 
-	<!--div id="preloader"></div-->
+	<!--div class="preloader"></div-->
 
 	<!--BEGIN: page~wrapper-->
-	<div id="page-wrapper">
+	<div class="page-wrapper">
 			
-		<header id="site-header" role="banner">
+		<header class="site-header" role="banner">
 	
 			<hgroup>
-				<h1 id="site-title"><?php if(!is_home()) { wp_title(''); echo " :: "; } ?><a href="/"><?php bloginfo('name'); ?></a></h1>
-				<h2 id="site-description"><?php bloginfo( 'description' ); ?></h2>
+				<h1 class="site-title"><?php if(!is_home()) { wp_title(''); echo " :: "; } ?><a href="/"><?php bloginfo('name'); ?></a></h1>
+				<h2 class="site-description"><?php bloginfo( 'description' ); ?></h2>
 			</hgroup>
 	
 		</header>
 
 		<!-- Main Nav ~ to make the menu vertical instead of horizontal remove the menu_class of horiz-list -->
-		<nav id="main-nav" role="navigation">
+		<nav class="main-nav" role="navigation">
 			<h1 class="access-hide">Main Navigation</h1>
 			<?php wp_nav_menu(array('menu' => 'mainNav', 'menu_class' => 'horiz-list')); // create the mainNav menu inside Appearance menus and go to town -- for more on menus see: http://templatic.com/news/wordpress-3-0-menu-management ?>
 		</nav>

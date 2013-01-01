@@ -5,7 +5,7 @@
 $disableSidebar = get_post_meta($post->ID, 'disableSidebar', $single = true);
 if ($disableSidebar !== 'true'): ?>
 
-<aside id="sidebar-main">
+<aside class="sidebar-main">
 	<h1>Main Sidebar</h1>
 	<?php dynamic_sidebar('sidebar-main'); ?>
 </aside>
@@ -14,7 +14,7 @@ if ($disableSidebar !== 'true'): ?>
 <!--END: sidebar~main-->
 
 <!--BEGIN: content div-->
-<section id="content" class="clear-fix" role="main">
+<section class="content clear-fix" role="main">
 
 	<h1 class="access-hide">Latest Posts</h1>
 	
@@ -22,7 +22,7 @@ if ($disableSidebar !== 'true'): ?>
 
 		<?php while (have_posts()) : the_post(); //LOOPING through all the posts, we split onto two lines for clean indentation ?>
 
-			<article <?php post_class() ?> id="post-<?php the_ID(); ?>">
+			<article <?php post_class('clear-fix'); ?>>
 
 				<header>
 					<h1><?php the_title(); ?></h1>
@@ -34,7 +34,7 @@ if ($disableSidebar !== 'true'): ?>
 					<?php the_content(); ?>
 				</div>
 							
-				<footer id="post-meta-data">
+				<footer class="post-meta-data">
 					<ul class="no-bullet">
 						<li class="add-comment"><?php comments_popup_link('Share your comments', '1 Comment', '% Comments'); ?></li>
 						<li>Posted in <?php the_category(', ') ?></li>
@@ -51,7 +51,7 @@ if ($disableSidebar !== 'true'): ?>
 
 			<!--BEGIN: Page Nav-->
 			<?php if ( $wp_query->max_num_pages > 1 ) : // if there's more than one page turn on pagination ?>
-				<nav id="page-nav">
+				<nav class="page-nav">
 		        	<h1 class="hide">Page Navigation</h1>
 			        <ul class="clear-fix">
 				        <li class="next-link"><?php next_posts_link('Next Page') ?></li>

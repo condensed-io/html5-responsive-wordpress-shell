@@ -36,16 +36,16 @@
 		
 		h1 { position: absolute; left: -999em; }
 
-		#content { letter-spacing: .1em; }
+		.content { letter-spacing: .1em; }
 
 		/* size the image */
 		.abs-center { max-width: 60%; }
 
 		/* format the address */
-		#company-address { position: absolute; bottom: 1em; right: 0; font-size: .8em; }
-		#company-address dt, #company-address dd { display: inline-block; margin: 0 1em; }
-		#company-address dt:before { content: "\00a9 \0000a0"; }
-		#company-address .locality:after { content: ","; }
+		.company-address { position: absolute; bottom: 1em; right: 0; font-size: .8em; }
+		.company-address dt, .company-address dd { display: inline-block; margin: 0 1em; }
+		.company-address dt:before { content: "\00a9 \0000a0"; }
+		.company-address .locality:after { content: ","; }
 
 
 	</style>
@@ -57,12 +57,12 @@
 <body>
 
 	<!--BEGIN: Content -->
-	<div id="content" class="clear-fix" role="main">
+	<div class="content clear-fix" role="main">
 
 		<!-- coming soon image ~ should be roughly 1000px wide ** don't put the width in the image tag below ** -->
 		<img class="abs-center" src="/wp-content/themes/html5-responsive-wordpress-shell/images/img_coming-soon.png" alt="coming soon" />
 
-		<dl id="company-address" class="vcard">
+		<dl class="company-address vcard">
 
 			<dt class="org fn">company name</dt>
 

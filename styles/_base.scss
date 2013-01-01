@@ -27,7 +27,7 @@ You probably don't need to make many changes to this file
 	/*--- JQUERY RELATED --- */
 
 		// PRELOADER: Relies on some js in the functions file and a div in the header (both commented out by default) */
-		// .js div#preloader { position: fixed; left: 0; top: 0; z-index: 999; width: 100%; height: 100%; overflow: visible; background: #c0c0c0 url(./images/loading.gif) no-repeat center center; }*/
+		// .js div.preloader { position: fixed; left: 0; top: 0; z-index: 999; width: 100%; height: 100%; overflow: visible; background: #c0c0c0 url(./images/loading.gif) no-repeat center center; }*/
 
 		// Show-Hide Content
 		.make-link { color: #06F !important; text-decoration: none; margin-bottom: .5em; } 
@@ -45,7 +45,7 @@ You probably don't need to make many changes to this file
 		.indicator a:hover, .indicator a:focus, .indicator a:active { color: black; background-color: #FFF; text-decoration: none; cursor: pointer; }
 	
 		// Hide these items when Javascript is active
-		.js #js-ind, .js .hide { display: none; }
+		.js .js-ind, .js .hide { display: none; }
 
 
 	/*--- GLOBAL STYLES ---*/

@@ -5,7 +5,7 @@ do not add layout here, add layout to responsive.scss
 
 
 	/*-- FORMS --*/
-		#search-form input[type='text'] { width: 10em; }
+		.search-form input[type='text'] { width: 10em; }
 		
 		// Text Inputs
 		input[type='text'] {
@@ -15,33 +15,33 @@ do not add layout here, add layout to responsive.scss
 	
 	
 	/*--- PAGE WRAPPER ---*/
-		#page-wrapper { padding: 0 5%; }
+		.page-wrapper { padding: 0 5%; }
 
 
 	/*--- SITE HEADER ---*/
 	
-		#site-header { background-color: $header-bkg; }
-		#site-header #site-title { }
-		#site-header #site-description { }	
+		.site-header { background-color: $header-bkg; }
+		.site-header .site-title { }
+		.site-header .site-description { }	
 
 		// Nav
-		#main-nav a { font-size: 1.2em; text-decoration: none; display: inline-block; line-height: 1.8em; margin: 0 3px 3px 0; padding: 1em 2em; -moz-border-radius: 10px; -khtml-border-radius: 10px; -webkit-border-radius: 10px; border-radius: 10px; }
+		.main-nav a { font-size: 1.2em; text-decoration: none; display: inline-block; line-height: 1.8em; margin: 0 3px 3px 0; padding: 1em 2em; -moz-border-radius: 10px; -khtml-border-radius: 10px; -webkit-border-radius: 10px; border-radius: 10px; }
 	
 		// Nav Links
-		#main-nav a:link, #main-nav a:visited  { color: darken($nav-up, 40%); background: $nav-up; }
-		#main-nav a:hover, #main-nav a:active, #main-nav a:focus { color: darken($nav-dn, 20%); background: $nav-dn; text-decoration: underline; }
+		.main-nav a:link, .main-nav a:visited  { color: darken($nav-up, 40%); background: $nav-up; }
+		.main-nav a:hover, .main-nav a:active, .main-nav a:focus { color: darken($nav-dn, 20%); background: $nav-dn; text-decoration: underline; }
 
 		// Down States
-		#main-nav .current_page_item a { color: lighten($nav-current, 40%) !important; background: $nav-current; cursor: default; }
+		.main-nav .current_page_item a { color: lighten($nav-current, 40%) !important; background: $nav-current; cursor: default; }
 	
 		
 	/*--- CONTENT AREA ---*/
 	
-		#content { }
-		#content em { font-style: italic; }
+		.content { }
+		.content em { font-style: italic; }
 		
 		// Page Nav
-		#page-nav a { float: right; padding: .5em 2em; margin: 1em; }
+		.page-nav a { float: right; padding: .5em 2em; margin: 1em; }
 
 		// Page
 		.page {}
@@ -58,21 +58,21 @@ do not add layout here, add layout to responsive.scss
 	
 	/*--- SIDEBAR ~ MAIN ---*/
 
-		#sidebar-main { padding-bottom: 3em; }
-		#sidebar-main ul { list-style-position: inside; }
+		.sidebar-main { padding-bottom: 3em; }
+		.sidebar-main ul { list-style-position: inside; }
 	
 	
 	/*--- SIDEBAR ~ FOOTER ---*/
 
-		#sidebar-footer ul { list-style-position: inside; }
+		.sidebar-footer ul { list-style-position: inside; }
 
 
 	/*--- FOOTER ---*/
 
-		#footer { clear: both; padding-bottom: 20px; text-align: right; }
+		.footer { clear: both; padding-bottom: 20px; text-align: right; }
 			
 		// Credit
-		#footer #site-credits a { letter-spacing: 1px; }
+		.footer .site-credits a { letter-spacing: 1px; }
 
 
 

@@ -5,7 +5,7 @@
 $disableSidebar = get_post_meta($post->ID, 'disableSidebar', $single = true);
 if ($disableSidebar !== 'true'): ?>
 
-<aside id="sidebar-main">
+<aside class="sidebar-main">
 	<h1>Main Sidebar</h1>
 	<?php dynamic_sidebar('sidebar-main'); ?>
 </aside>
@@ -14,7 +14,7 @@ if ($disableSidebar !== 'true'): ?>
 <!--END: sidebar~main-->
 
 <!--BEGIN: Content-->
-<div id="content" role="main">
+<div class="content" role="main">
 
 	<?php if (have_posts()) : ?>
 
@@ -46,9 +46,9 @@ if ($disableSidebar !== 'true'): ?>
 		<?php while (have_posts()) : the_post(); ?>
 
 		<!--BEGIN: Archive-->
-		<article <?php post_class() ?> id="post-<?php the_ID(); ?>">
+		<article <?php post_class(); ?>>
 						
-			<h2 id="post-<?php the_ID(); ?>"><a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>"><?php the_title(); ?></a></h2>
+			<h2 class="post-<?php the_ID(); ?>"><a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>"><?php the_title(); ?></a></h2>
 			
 			<small><?php the_time('l, F jS, Y') ?></small>
 
@@ -76,7 +76,7 @@ if ($disableSidebar !== 'true'): ?>
 
 		<!--BEGIN: Page Nav-->
 		<?php if ( $wp_query->max_num_pages > 1 ) : // if there's more than one page turn on pagination ?>
-	        <nav id="page-nav">
+	        <nav class="page-nav">
 	        	<h1 class="hide">Page Navigation</h1>
 		        <ul class="clear-fix">
 			        <li class="prev-link"><?php next_posts_link('Next Page') ?></li>

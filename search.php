@@ -5,7 +5,7 @@
 $disableSidebar = get_post_meta($post->ID, 'disableSidebar', $single = true);
 if ($disableSidebar !== 'true'): ?>
 
-<aside id="sidebar-main">
+<aside class="sidebar-main">
 	<h1>Main Sidebar</h1>
 	<?php dynamic_sidebar('sidebar-main'); ?>
 </aside>
@@ -14,7 +14,7 @@ if ($disableSidebar !== 'true'): ?>
 <!--END: sidebar~main-->
 
 <!--BEGIN: Content-->
-<div id="content" class="clear-fix" role="main">
+<div class="content" class="clear-fix" role="main">
 	
 	<header>
 		<h1>Search Results</h1>
@@ -29,7 +29,7 @@ if ($disableSidebar !== 'true'): ?>
 	
 		<div class="search-result-item">
 		<!--BEGIN: List Item-->
-			<a <?php post_class('ClearFix') ?> id="post-<?php the_ID(); ?>" href="<?php the_permalink() ?>" title="Click to read more...">
+			<a <?php post_class('clear-fix'); ?> href="<?php the_permalink() ?>" title="Click to read more...">
 			
 				<strong><?php the_title(); ?></strong>
 

@@ -5,7 +5,7 @@
 $disableSidebar = get_post_meta($post->ID, 'disableSidebar', $single = true);
 if ($disableSidebar !== 'true'): ?>
 
-<aside id="sidebar-main">
+<aside class="sidebar-main">
 	<h1>Main Sidebar</h1>
 	<?php dynamic_sidebar('sidebar-main'); ?>
 </aside>
@@ -13,12 +13,12 @@ if ($disableSidebar !== 'true'): ?>
 <?php endif; ?>
 <!--END: sidebar~main-->
 
-<div id="content" class="clear-fix" role="main">
+<div class="content clear-fix" role="main">
 	
 <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 	
 	<!--BEGIN: Single Post-->
-	<article <?php post_class() ?> id="post-<?php the_ID(); ?>">
+	<article <?php post_class('clear-fix'); ?>>
 				
 		<header>
 			<h1><?php the_title(); ?></h1>	

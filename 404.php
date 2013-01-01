@@ -3,7 +3,7 @@
 <!--Put your sidebars in wherever necessary-->
 
 <!--BEGIN: Content-->
-<div id="content" role="main">
+<div class="content" role="main">
 
 		<h1>Keep searching.</h1>
 	

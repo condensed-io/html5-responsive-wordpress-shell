@@ -1,5 +1,5 @@
 <!--BEGIN: Footer Section-->
-<footer id="footer" class="clear-fix">
+<footer class="footer clear-fix">
 
 	<!--BEGIN: Footer Nav-->
 	<nav role="navigation">
@@ -27,14 +27,14 @@
 	<!--END: Contact Info-->
 	
 	<!--BEGIN: Credit. If you use this theme please consider keeping our credit in the footer.  You may delete it though if needed. -->
-	<article id="site-credits">
+	<article class="site-credits">
 		<h1>Credits</h1>
-		<h2><a id="cred-yours" href="http://html5.mimoymima.com" title="keyword rich title">Your Credit Here</a></h2>
-		<h2><a id="cred-mine" href="http://html5.mimoymima.com" title="Build your Wordpress themes faster - HTML5 WordPress Shell">built using the HTML5 Wordpress shell :: html5.mimoymima.com</a></h2>
+		<h2><a class="cred-yours" href="http://html5.mimoymima.com" title="keyword rich title">Your Credit Here</a></h2>
+		<h2><a class="cred-mine" href="http://html5.mimoymima.com" title="Build your Wordpress themes faster - HTML5 WordPress Shell">built using the HTML5 Wordpress shell :: html5.mimoymima.com</a></h2>
 	</article>
 	<!--END: Credit-->
 	
-	<p id="copyright"><small>&copy; <?php echo date('Y'); ?> <?php bloginfo('name')?></small></p>
+	<p class="copyright"><small>&copy; <?php echo date('Y'); ?> <?php bloginfo('name')?></small></p>
 	
 	<!-- wp_footer hook for Plugins -->
 	<?php wp_footer(); ?>
@@ -43,7 +43,7 @@
 <!--END: Footer Section-->
 
 <!--Javascript Indicator-->
-<div class="indicator" id="js-ind"><a href="http://www.mimoymima.com/help/turning-javascript-on-and-off/" title="You don't have javascript enabled, click here to learn more.">Enable Javascript</a></div>
+<div class="js-ind indicator"><a href="http://www.mimoymima.com/help/turning-javascript-on-and-off/" title="You don't have javascript enabled, click here to learn more.">Enable Javascript</a></div>
 <!--Javascript Indicator-->
 
 </div>
