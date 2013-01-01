@@ -90,7 +90,7 @@ function body_classes() {
         elseif (is_tag()) { echo "tag"," "; }
         elseif (is_home()) { echo "home"," "; }
         elseif (is_404()) { echo "page404"," "; }
-    endif;
+    
 
     // echo post name
     echo $post->post_name;
