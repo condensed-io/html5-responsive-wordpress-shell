@@ -75,25 +75,35 @@ if (function_exists('add_theme_support')) {
 // Body Class Function
 function body_classes() {
 
+    global $post;
+
+ // echo some of these things
+    if (is_category()) { echo "page_category"," "; }
+        elseif (is_search()) { echo "page_search"," "; }
+        elseif (is_tag()) { echo "page_tag"," "; }
+        elseif (is_home()) { echo "page_home"," "; }
+        elseif (is_404()) { echo "page_404"," "; }
+
+    // echo page_(page name)
+    if( is_page()) {
+        $pn = $post->post_name;
+        echo "page_".$pn;
+    }
+
+    // echo parent_(parent name)
     $post_parent = get_post($post->post_parent);
     $parentSlug = $post_parent->post_name;
-    echo $parentSlug." ";
-
-    // echo the name of the custom template being used
-    global $wp_query;
-    $template_name = get_post_meta( $wp_query->post->ID, '_wp_page_template', true );
-    $tn = str_replace(".php", "", $template_name);
-    echo "template-".$tn." ";
-
-    if (is_category()) { echo "category"," "; }
-        elseif (is_search()) { echo "search"," "; }
-        elseif (is_tag()) { echo "tag"," "; }
-        elseif (is_home()) { echo "home"," "; }
-        elseif (is_404()) { echo "page404"," "; }
     
+    if ( is_page() && $post->post_parent ) {
+            echo "parent_".$parentSlug." ";
+    }
 
-    // echo post name
-    echo $post->post_name;
+    // echo template_(template name)
+    $temp = get_page_template();
+    $path = pathinfo($temp);
+    $tmp = $path['filename'] . "." . $path['extension'];
+    $tn= str_replace(".php", "", $tmp);
+    echo "template_".$tn." ";
 
 }
 
