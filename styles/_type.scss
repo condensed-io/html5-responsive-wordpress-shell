@@ -1,6 +1,6 @@
 /*--- Base Font Settings ---*/
 	body {
-		font-family: 'Helvetica Neue', helvetica, sans-serif;
+		font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
 		font-size: 14px;
 		font-weight: 300;
 		line-height: 1.5;
@@ -10,7 +10,7 @@
 /*--- Default Font Stacks ---*/
 	.serif { font-family: Baskerville, Palatino, "Palatino Linotype", "Hoefler Text", "Times New Roman", times, serif; } /*cambria, cochin ??*/
 	.monospace { font-family: 'courier new', courier, Consolas, Menlo, Monaco, 'Lucida Console', 'Liberation Mono', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', monospace; }
-	.sans { font-family: 'Helvetica Neue', helvetica, sans-serif; }
+	.sans { font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; font-weight: 300; }
 
 
 /*--- Load Fonts ---*/

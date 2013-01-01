@@ -1,9 +1,9 @@
 <?php get_header(); ?>
 
 <!--BEGIN: sidebar~main-->
-<?php // to disable this sidebar on a page by page basis just add a custom field to your page or post of disableSidebarMain = true
-$disableSidebarMain = get_post_meta($post->ID, 'disableSidebarMain', $single = true);
-if ($disableSidebarMain !== 'true'): ?>
+<?php // to disable this sidebar on a page by page basis just add a custom field to your page or post of disableSidebar = true
+$disableSidebar = get_post_meta($post->ID, 'disableSidebar', $single = true);
+if ($disableSidebar !== 'true'): ?>
 
 <aside id="sidebar-main">
 	<h1>Main Sidebar</h1>
