@@ -52,7 +52,7 @@ $android = strpos($_SERVER['HTTP_USER_AGENT'],"Android");
 </head>
 
 <!--see http://www.mimoymima.com/2010/03/lab/wordpress-body-tag/-->
-<body class="<?php body_class(); ?>">
+<body class="<?php body_classes(); ?>">
 
 	<!--div class="preloader"></div-->
 

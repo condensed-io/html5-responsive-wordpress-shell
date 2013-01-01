@@ -72,6 +72,31 @@ if (function_exists('add_theme_support')) {
 
 }
 
+// Body Class Function
+function body_classes() {
+
+    $post_parent = get_post($post->post_parent);
+    $parentSlug = $post_parent->post_name;
+    echo $parentSlug." ";
+
+    // echo the name of the custom template being used
+    global $wp_query;
+    $template_name = get_post_meta( $wp_query->post->ID, '_wp_page_template', true );
+    $tn = str_replace(".php", "", $template_name);
+    echo "template-".$tn." ";
+
+    if (is_category()) { echo "category"," "; }
+        elseif (is_search()) { echo "search"," "; }
+        elseif (is_tag()) { echo "tag"," "; }
+        elseif (is_home()) { echo "home"," "; }
+        elseif (is_404()) { echo "page404"," "; }
+    endif;
+
+    // echo post name
+    echo $post->post_name;
+
+}
+
 
 // Removes the automatic paragraph tags from the excerpt, we leave it on for the content and have a custom field you can use to turn it off on a page by page basis --> wpautop = false
 	remove_filter('the_excerpt', 'wpautop');
@@ -115,25 +140,6 @@ function get_the_custom_excerpt($length){
 			return "";
 		}
 	}
-
-
-// Body Class Function
-function body_class() {
-
-    $post_parent = get_post($post->post_parent);
-    $parentSlug = $post_parent->post_name;
-    echo $parentSlug." ";
-
-    // echo the name of the template being used
-    global $wp_query;
-    $template_name = get_post_meta( $wp_query->post->ID, '_wp_page_template', true );
-    $tn = str_replace(".php", "", $template_name);
-    echo "template-".$tn." ";
-
-    // echo post name
-    echo $post->post_name;
-
-}
 
 	
 // To REMOVE unused dashboard widgets you can uncomment the next line and customize /includes/remove.php
