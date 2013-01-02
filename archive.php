@@ -14,7 +14,7 @@ if ($disableSidebar !== 'true'): ?>
 <!--END: sidebar~main-->
 
 <!--BEGIN: Content-->
-<div class="content" role="main">
+<div class="main-content" role="main">
 
 	<?php if (have_posts()) : ?>
 

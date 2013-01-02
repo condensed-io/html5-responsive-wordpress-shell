@@ -13,7 +13,7 @@ if ($disableSidebar !== 'true'): ?>
 <?php endif; ?>
 <!--END: sidebar~main-->
 
-<div class="content clear-fix" role="main">
+<div class="main-content clear-fix" role="main">
 	
 <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 	

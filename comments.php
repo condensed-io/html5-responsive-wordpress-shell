@@ -1,8 +1,6 @@
 <?php
 /*
-thanks to:
-http://themeshaper.com/2009/07/01/wordpress-theme-comments-template-tutorial/
-http://ponderwell.net/2010/07/html5-forms-and-wp-3-0-comments/
+this comments template needs to be rewritten, we usually don't use comments templates, we use disqus, livefyre or intense debate
 */
 ?>
 
@@ -127,7 +125,7 @@ foreach ( $comments as $comment )
                                 <div class="form-textarea"><textarea class="comment" name="comment" cols="45" rows="8" tabindex="6"></textarea></div>
               </div><!-- #form-section-comment .form-section -->
  
-              <div class="form-allowed-tags" class="form-section">
+              <div class="form-allowed-tags form-section">
                   <p><span><?php _e('You may use these <abbr title="HyperText Markup Language">HTML</abbr> tags and attributes:', 'your-theme') ?></span> <code><?php echo allowed_tags(); ?></code></p>
               </div>
  

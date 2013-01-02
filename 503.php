@@ -57,7 +57,7 @@
 <body>
 
 	<!--BEGIN: Content -->
-	<div class="content clear-fix" role="main">
+	<div class="main-content clear-fix" role="main">
 
 		<!-- coming soon image ~ should be roughly 1000px wide ** don't put the width in the image tag below ** -->
 		<img class="abs-center" src="/wp-content/themes/html5-responsive-wordpress-shell/images/img_coming-soon.png" alt="coming soon" />
