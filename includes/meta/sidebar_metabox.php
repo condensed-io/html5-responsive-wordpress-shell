@@ -1,13 +1,13 @@
 <?php
 
 // Hook into WordPress
-add_action( 'admin_init', 'add_custom_metabox' );
+add_action( 'admin_init', 'sidebar_metabox' );
 add_action( 'save_post', 'save_custom_url' );
 
 /**
  * Add meta box
  */
-function add_custom_metabox() {
+function sidebar_metabox() {
     $types = array( 'post', 'page' ); // you can add more post_types here
     foreach( $types as $type ) {
         add_meta_box( 'custom-metabox', __( 'Sidebar' ), 'url_custom_metabox', $type, 'side', 'high' );
@@ -42,15 +42,5 @@ function save_custom_url( $post_id ) {
     if( $_POST ) {
         update_post_meta( $post->ID, 'disableSidebar', $_POST['sidebar'] );
     }
-}
-
-/**
- * Get and return the values for the URL and description
- */
-function get_url_desc_box() {
-    global $post;
-    $sidebar = get_post_meta( $post->ID, 'disableSidebar', true );
-
-    return array( $urllink, $urldesc );
 }
 ?>
