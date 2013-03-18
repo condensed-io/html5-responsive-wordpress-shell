@@ -71,4 +71,5 @@
 		<nav id="main-nav" role="navigation">
 			<h1 class="access-hide">Main Navigation</h1>
 			<?php wp_nav_menu('menu=mainNav'); // create the mainNav menu inside Appearance menus and go to town -- for more on menus see: http://templatic.com/news/wordpress-3-0-menu-management ?>
+            <div class="clear-fix"></div>
 		</nav>
