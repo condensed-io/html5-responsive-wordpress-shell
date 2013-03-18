@@ -7,22 +7,20 @@ Author: Brent Lagerman
 Author URI: http://mimoymima.com/
 */
 
-/*
-	mYm6 - updated: Dec 30, 2012 - brent@mimoymima.com
-	
-	--- Color References ---
-	link blue: #39C;
-	background: #XXXXXX;
-	more colors: #XXXXXX;
-*/
-
 /*--------------------------------------------------------------------------------------------------*/
 /* GENERAL STYLES - These defaults aren't site specific so you don't need to change them */
 /* Instead you should add your styles in the BASE STYLING section below */
 /* If you think you have a better style setting for something in this section send to brent@mimoymima.com */
 /*--------------------------------------------------------------------------------------------------*/
 
-	/* Eric Meyer's Reset CSS v2.0 (http://meyerweb.com/eric/tools/css/reset/) -- http://cssreset.com */ html, body, div, span, applet, object, iframe,h1, h2, h3, h4, h5, h6, p, blockquote, pre,a, abbr, acronym, address, big, cite, code,del, dfn, em, img, ins, kbd, q, s, samp,small, strike, strong, sub, sup, tt, var,b, u, i, center,dl, dt, dd, ol, ul, li,fieldset, form, label, legend,table, caption, tbody, tfoot, thead, tr, th, td,article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary,time, mark, audio, video {	margin: 0;	padding: 0;	border: 0;	font-size: 100%; font: inherit;	vertical-align: baseline; } /* HTML5 display-role reset for older browsers */ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {	display: block; } body { line-height: 1; } ol, ul { list-style: none; } blockquote, q { quotes: none;}blockquote:before, blockquote:after,q:before, q:after { content: ''; content: none;} table { border-collapse: collapse; border-spacing: 0; }
+/* Imports */
+@import url(http://fonts.googleapis.com/css?family=Roboto:300,400,700|Roboto+Condensed); /* Domo arigato, mister Roboto */
+@import url(css/custom.css);
+@import url(css/responsive.css);
+
+
+
+
 
 	/* apply a natural box layout model to all elements - http://paulirish.com/2012/box-sizing-border-box-ftw/ */
 	* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
@@ -112,186 +110,3 @@ Author URI: http://mimoymima.com/
 		/* Hide these items when Javascript is active */
 		.js #js-ind, .js .hide { display: none; }
 
-
-
-/*--------------------------------------------------------------------------------------------------*/
-/* BASE STYLING: style 320px first and go up from there using media query areas below */
-/*--------------------------------------------------------------------------------------------------*/
-
-
-	/*--- SITE WIDE ---*/
-	
-		/* LOAD FONTS */
-		@font-face { font-family: 'StMarieThin'; src: url('./fonts/StMarie-Thin-webfont.eot'); src: url('./fonts/StMarie-Thin-webfont.eot?#iefix') format('embedded-opentype'), url('./fonts/StMarie-Thin-webfont.woff') format('woff'), url('./fonts/StMarie-Thin-webfont.ttf') format('truetype'), url('./fonts/StMarie-Thin-webfont.svg#StMarieThin') format('svg'); font-weight: normal; font-style: normal; }
-
-		/* Set the background and font color for the html and body, if you don't have a different bkg for the body set both to be the same */
-		html { background: #FFF; color: #333; }
-		body { background: #FFF; color: #333; }
-
-		/* Sets font family, size, width, and margins for the page */
-		body { font-size: 14px; font-weight: 300; line-height: 1.5; font-family: 'Helvetica Neue', helvetica, sans-serif; }
-	
-		/* Headings */
-		h1, h2, h3, h4, h5, h6 { font-weight: 500; font-family: 'StMarieThin', 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', helvetica, sans-serif; }
-
-		/* Links */
-		a:link, a:visited { color: #39C; text-decoration: underline; }
-		a:hover, a:active, a:focus { color: #F90; text-decoration: none; }
-	
-		/* Hide these elements but keep them accessible */
-		.access-hide { position: absolute; left: -999em; }
-
-		/* page-wrapper */
-		#page-wrapper { }
-	
-	
-	/*--- HEADER ---*/
-	
-		#site-header #site-title { }
-		#site-header #site-description {  }	
-
-		/* Nav */
-		#main-nav a { font-size: 1.2em; text-decoration: none; display: inline-block; line-height: 1.8em; margin: 0 3px 3px 0; padding: 1em 2em; -moz-border-radius: 10px; -khtml-border-radius: 10px; -webkit-border-radius: 10px; border-radius: 10px; }
-	
-		/* Nav Links*/
-		#main-nav a:link, #main-nav a:visited  { color: #08BDE6; background: #CAF3FF; }
-		#main-nav a:hover, #main-nav a:active, #main-nav a:focus { color: #00A5CB; background: #95E8FF; text-decoration: underline; }
-
-		/* DownStates*/
-		#main-nav .current_page_item a { color: #C63 !important; background: #FFED66; cursor: default; }
-	
-		
-	/*--- CONTENT AREA ---*/
-	
-		#content { }
-		#content em { font-style: italic; }
-		
-		/* Page Nav */
-		#page-nav a { float: right; padding: .5em 2em; margin: 1em; }
-
-		/* Page */
-		.page {}
-
-		/* Posts */
-		.post {}
-
-		/* Single */
-		.single-template {}
-			/* Comments using Intense Debate */
-		.post-meta-data	{ margin: 1em 0; }
-	
-	
-	/*--- SIDEBAR ~ MAIN ---*/
-
-		#sidebar-main ul { list-style-position: inside; }
-	
-	
-	/*--- SIDEBAR ~ FOOTER ---*/
-
-		#sidebar-footer ul { list-style-position: inside; }
-
-
-	/*--- FOOTER ---*/
-
-		#footer { clear: both; padding-bottom: 20px; text-align: right; }
-			
-		/* Credit */
-		#footer #site-credits a { letter-spacing: 1px; }
-
-
-/*--------------------------------------------------------------------------------------------------*/
-/* Specific Page Styles */
-/*--------------------------------------------------------------------------------------------------*/
-
-	/*--- home ---*/
-	#home {}
-
-	/*--- about ---*/
-	#about {}
-
-
-
-/*--------------------------------------------------------------------------------------------------*/
-/* 100-480 media query */
-/*--------------------------------------------------------------------------------------------------*/
-
-@media screen and (min-width: 100px) and (max-width: 480px) {
-	
-	/* Shows media query size on the top of the browser window -- DELETE before making site live */
-	body:before { content: "100-480"; left: 1em; position: absolute; top: 1em; z-index: 999; }
-
-	/* add your styles here */
-
-} /* END: 100-480 media query - don't delete this bracket */
-
-
-/*--------------------------------------------------------------------------------------------------*/
-/* 480-600 media query */
-/*--------------------------------------------------------------------------------------------------*/
-
-@media screen and (min-width: 480px) and (max-width: 600px) {
-	
-	/* Shows media query size on the top of the browser window -- DELETE before making site live */
-	body:before { content: "480-600"; left: 1em; position: absolute; top: 1em; z-index: 999; }
-
-	/* add your styles here */
-
-} /* END: 480-600 media query - don't delete this bracket */
-
-
-/*--------------------------------------------------------------------------------------------------*/
-/* 600-750 media query */
-/*--------------------------------------------------------------------------------------------------*/
-
-@media screen and (min-width: 600px) and (max-width: 750px) {
-
-	/* Shows media query size on the top of the browser window -- DELETE before making site live */
-	body:before { content: "600-750"; left: 1em; position: absolute; top: 1em; z-index: 999; }
-
-	/* add your styles here */
-
-} /* END: 600-750 media query - don't delete this bracket */
-
-
-/*--------------------------------------------------------------------------------------------------*/
-/* 750-980 media query */
-/*--------------------------------------------------------------------------------------------------*/
-
-@media screen and (min-width: 750px) and (max-width: 980px) {
-
-	/* Shows media query size on the top of the browser window -- DELETE before making site live */
-	body:before { content: "750-980"; left: 1em; position: absolute; top: 1em; z-index: 999; }
-
-	/* add your styles here */
-
-} /* END: 750-980 media query - don't delete this bracket */
-
-
-
-/*--------------------------------------------------------------------------------------------------*/
-/* 980-1200 media query */
-/*--------------------------------------------------------------------------------------------------*/
-
-@media screen and (min-width: 980px) and (max-width: 1200px) {
-
-	/* Shows media query size on the top of the browser window -- DELETE before making site live */
-	body:before { content: "980-1200"; left: 1em; position: absolute; top: 1em; z-index: 999; }
-
-	/* add your styles here */
-
-} /* END: 980-1200 media query - don't delete this bracket */
-
-
-
-/*--------------------------------------------------------------------------------------------------*/
-/* 1200+ media query */
-/*--------------------------------------------------------------------------------------------------*/
-
-@media screen and (min-width: 1200px) {
-
-	/* Shows media query size on the top of the browser window -- DELETE before making site live */
-	body:before { content: "1200 and up"; left: 1em; position: absolute; top: 1em; z-index: 999; }
-
-	/* add your styles here */
-
-} /* END: 1200+ media query - don't delete this bracket */

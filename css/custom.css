@@ -1,0 +1,103 @@
+/* Custom styles here */
+
+/* Eric Meyer's Reset CSS v2.0 (http://meyerweb.com/eric/tools/css/reset/) -- http://cssreset.com */ html, body, div, span, applet, object, iframe,h1, h2, h3, h4, h5, h6, p, blockquote, pre,a, abbr, acronym, address, big, cite, code,del, dfn, em, img, ins, kbd, q, s, samp,small, strike, strong, sub, sup, tt, var,b, u, i, center,dl, dt, dd, ol, ul, li,fieldset, form, label, legend,table, caption, tbody, tfoot, thead, tr, th, td,article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary,time, mark, audio, video {	margin: 0;	padding: 0;	border: 0;	font-size: 100%; font: inherit;	vertical-align: baseline; } /* HTML5 display-role reset for older browsers */ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {	display: block; } body { line-height: 1; } ol, ul { list-style: none; } blockquote, q { quotes: none;}blockquote:before, blockquote:after,q:before, q:after { content: ''; content: none;} table { border-collapse: collapse; border-spacing: 0; }
+
+/*--------------------------------------------------------------------------------------------------*/
+/* BASE STYLING: style 320px first and go up from there using media query areas below */
+/*--------------------------------------------------------------------------------------------------*/
+
+
+/*--- SITE WIDE ---*/
+
+/* Set the background and font color for the html and body, if you don't have a different bkg for the body set both to be the same */
+html { background: #FFF; color: #333; }
+body { background: #FFF; color: #333; }
+
+/* Sets font family, size, width, and margins for the page */
+body { font-size: 16px; font-weight: 300; line-height: 1.5; font-family: 'Roboto Condensed', sans-serif; }
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 { font-weight: 700; font-family: 'Roboto', sans-serif; }
+
+/* Links */
+a:link, a:visited { color: #39C; text-decoration: underline; }
+a:hover, a:active, a:focus { color: #F90; text-decoration: none; }
+
+/* Hide these elements but keep them accessible */
+.access-hide { position: absolute; left: -999em; }
+
+/* page-wrapper */
+#page-wrapper { }
+
+::selection {
+    background: #ffb7b7; /* Safari */
+}
+::-moz-selection {
+    background: #ffb7b7; /* Firefox */
+}
+
+
+/*--- HEADER ---*/
+
+#site-header #site-title { }
+#site-header #site-description {  }
+
+/* Nav */
+#main-nav li {float: left;}
+#main-nav a { font-size: 1.2em; text-decoration: none; display: inline-block; line-height: 1.8em; margin: 0 3px 3px 0; padding: 0.5em 1em; -moz-border-radius: 5px; -khtml-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px; }
+
+/* Nav Links*/
+#main-nav a:link, #main-nav a:visited  { color: #fff; background: #aaa; }
+#main-nav a:hover, #main-nav a:active, #main-nav a:focus { color: #fff; background: #bbb;}
+
+/* DownStates*/
+#main-nav .current_page_item a { color: #C63 !important; background: #FFED66; cursor: default; }
+
+
+/*--- CONTENT AREA ---*/
+
+#content { }
+#content em { font-style: italic; }
+
+/* Page Nav */
+#page-nav a { float: right; padding: .5em 2em; margin: 1em; }
+
+/* Page */
+.page {}
+
+/* Posts */
+.post {}
+
+/* Single */
+.single-template {}
+/* Comments using Intense Debate */
+.post-meta-data	{ margin: 1em 0; }
+
+
+/*--- SIDEBAR ~ MAIN ---*/
+
+#sidebar-main ul { list-style-position: inside; }
+
+
+/*--- SIDEBAR ~ FOOTER ---*/
+
+#sidebar-footer ul { list-style-position: inside; }
+
+
+/*--- FOOTER ---*/
+
+#footer { clear: both; padding-bottom: 20px; text-align: right; }
+
+/* Credit */
+#footer #site-credits a { letter-spacing: 1px; }
+
+
+/*--------------------------------------------------------------------------------------------------*/
+/* Specific Page Styles */
+/*--------------------------------------------------------------------------------------------------*/
+
+/*--- home ---*/
+#home {}
+
+/*--- about ---*/
+#about {}
