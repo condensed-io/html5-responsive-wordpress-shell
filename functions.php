@@ -118,6 +118,8 @@ function get_the_custom_excerpt($length){
 
 // To REMOVE unused dashboard widgets you can uncomment the next line and customize /includes/remove.php
 // require_once('includes/remove.php');
+// Adds meta box for disableSidebar (according to http://www.mimoymima.com/2010/03/lab/disable-sidebar/)
+require_once('includes/meta/sidebar_metabox.php');
 
 /*
 COMMENT FUNCTIONS:
