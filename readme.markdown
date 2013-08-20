@@ -1,7 +1,10 @@
 HTML5 Wordpress Shell
 ---------------------
 
-NEW: if you use SASS switch to the SASS branch, easy as that
+NOTE: Most work being done on the shell is being done on the SASS version
+
+[SASS version]: https://github.com/condensed/html5-responsive-wordpress-shell-SASS
+
 
 This *Shell* theme can freely be used to rapidly develop websites using clean HTML5 that generates a well thought out document outline.
 
