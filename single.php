@@ -28,7 +28,7 @@ if ($disableSidebarMain !== 'true'): ?>
 		
 		<div class="entry">
 			<?php the_content('<p>Read the rest of this entry &raquo;</p>'); ?>
-			<?php link_pages('<p><strong>Pages:</strong> ', '</p>', 'number'); ?>
+			<?php wp_link_pages('<p><strong>Pages:</strong> ', '</p>', 'number'); ?>
 		</div>
 		
 		<!--BEGIN: Post Meta Data-->
