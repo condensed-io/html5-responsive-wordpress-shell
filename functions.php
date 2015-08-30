@@ -114,6 +114,13 @@ function get_the_custom_excerpt($length){
 			return "";
 		}
 	}
+
+// Funstion used to see if you are in a post type
+    function is_post_type($type){
+        global $wp_query;
+        if($type == get_post_type($wp_query->post->ID)) return true;
+        return false;
+    }
 	
 
 // To REMOVE unused dashboard widgets you can uncomment the next line and customize /includes/remove.php
