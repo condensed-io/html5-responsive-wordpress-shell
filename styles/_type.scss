@@ -37,41 +37,41 @@
 	@mixin huge-type() {
 		font-size: 1.6em;
 		@include breakpoint(mini) {
-			font-size: 1.8em;
+			font-size: 1.8rem;
 		}
 		@include breakpoint(medium) {
-			font-size: 2em;
+			font-size: 2rem;
 		}
 		@include breakpoint(large) {
-			font-size: 2.5em;
+			font-size: 2.5rem;
 		}
 	}
 	@mixin large-type() {
-		font-size: 1.4em;
+		font-size: 1.4rem;
 		@include breakpoint(medium) {
-			font-size: 1.6em;
+			font-size: 1.6rem;
 		}
 		@include breakpoint(large) {
-			font-size: 1.9em;
+			font-size: 1.9rem;
 		}
 		@include breakpoint(mega) {
-			font-size: 2.2em;
+			font-size: 2.2rem;
 		}
 	}
 	@mixin medium-type() {
-		font-size: 1.1em;
+		font-size: 1.1rem;
 		@include breakpoint(medium) {
-			font-size: 1.3em;
+			font-size: 1.3rem;
 		}
 		@include breakpoint(large) {
-			font-size: 1.4em;
+			font-size: 1.4rem;
 		}
 		@include breakpoint(mega) {
-			font-size: 1.5em;
+			font-size: 1.5rem;
 		}
 	}
 	@mixin normal-type() {
-		font-size: 1em;
+		font-size: 1rem;
 	}
 	@mixin small-type() {
 		font-size: 90%;
