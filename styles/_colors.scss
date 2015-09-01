@@ -1,0 +1,124 @@
+//::: COLOR REFERENCE :::::::::::::::::::::::::::::
+
+// A few default color values that all sites should have
+$white: #FFF;
+$black: #000;
+$black-50: rgba(0,0,0,.50);
+
+// Define your color values here, these are placeholders
+$orange: #F60;
+$lighter-grey: #EEE;
+$light-grey: #CCC;
+$grey: #666;
+$dark-grey: #333;
+
+
+
+//::: ELEMENTS ::::::::::::::::::::::::::::::::::::
+
+	// set the colors on the page
+	html {
+		background: $white;
+		color: $dark-grey;
+	}
+	body {
+		background: $white;
+		color: $dark-grey;
+	}
+	.data-table {
+		th {
+			background-color: $black;
+			color: $white;
+		}
+		td {
+			border-bottom: 1px dotted $light-grey;
+		}
+	}
+
+	// Links
+	a:link, a:visited { color: $orange; }
+	a:hover, a:active, a:focus { color: $black; }
+	
+	// Show-Hide
+	.make-link {
+		color: $orange;
+	}
+	.make-link:hover,
+	.make-link:focus,
+	.make-link:active {
+		color: $black;
+	}
+	
+	.indicator a {
+		background-color: $orange;
+	}
+
+	input, textarea, select {
+		background: $lighter-grey;
+		color: $dark-grey;
+	}
+
+
+
+/* ::: COLORED SECTIONS ::::::::::::::::::::::::::::::::: */
+// Colors are added based on background
+
+	
+	// XXXXX AREA
+	.XXXX-area {
+		// add colors
+	}
+
+	// WHITE AREA
+	.white-area { // need to tweak these colors, they're all messy
+		
+		background-color: $white;
+		color: $dark-grey;
+
+		a {
+			&:link, &:visited {
+				color: $orange;
+			}
+			&:hover, &:focus, &:active {
+				color: $black;
+			}
+		}
+
+		input[type='text'], input[type='email']  {
+			@include placeholder {
+				color: $orange;
+			}
+			&:hover, &:active {
+				@include placeholder {
+					color: $black;
+				}
+			}
+			&:focus {
+				color: $black;
+				background-color: $black-50;
+				@include placeholder {
+					color: $black;
+				}	
+			}
+		}
+
+		input[type='submit'], .button {
+			color: $orange;
+			text-decoration: none;
+			font-weight: bold;
+			padding: .5em 2em;
+			margin: 1em;
+			border: .15em solid $orange;
+			&:hover, &:focus, &:active {
+				color: $black;
+				border-color: $black;
+			}
+		}
+	}
+
+
+
+/* ::: CLASSES ::::::::::::::::::::::::::::::::: */
+
+// example of how to make classes you can use inline in your html
+	.orange { color: $orange; }

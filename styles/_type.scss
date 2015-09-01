@@ -1,0 +1,143 @@
+//::: LOAD FONTS ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+	@import "../fonts/condensed.scss";
+
+
+
+//::: DEFINE FONT FAMILIES ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+// These mixins makes it easy to add font to elements in your stylesheets
+	
+	@mixin sans() {
+		font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+		font-weight: 300;
+	}
+
+	@mixin serif() {
+		font-family: Baskerville, Palatino, "Palatino Linotype", "Hoefler Text", "Times New Roman", times, serif; // cambria, cochin ??
+	}
+
+	@mixin monospace() {
+		font-family: Consolas, "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", Monaco, "Courier New", Courier, monospace;
+	}
+
+	// our icon font
+	@mixin condensed() {
+		font-family: 'condensed';
+		font-weight: normal;
+	}
+	// The class makes it easy to add the font to elements in the HTML
+	.icon-font {
+		@include condensed();
+	}
+
+
+
+//::: REUSABLE FONT SIZES ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+	@mixin huge-type() {
+		font-size: 1.6em;
+		@include breakpoint(mini) {
+			font-size: 1.8em;
+		}
+		@include breakpoint(medium) {
+			font-size: 2em;
+		}
+		@include breakpoint(large) {
+			font-size: 2.5em;
+		}
+	}
+	@mixin large-type() {
+		font-size: 1.4em;
+		@include breakpoint(medium) {
+			font-size: 1.6em;
+		}
+		@include breakpoint(large) {
+			font-size: 1.9em;
+		}
+		@include breakpoint(mega) {
+			font-size: 2.2em;
+		}
+	}
+	@mixin medium-type() {
+		font-size: 1.1em;
+		@include breakpoint(medium) {
+			font-size: 1.3em;
+		}
+		@include breakpoint(large) {
+			font-size: 1.4em;
+		}
+		@include breakpoint(mega) {
+			font-size: 1.5em;
+		}
+	}
+	@mixin normal-type() {
+		font-size: 1em;
+	}
+	@mixin small-type() {
+		font-size: 90%;
+		@include breakpoint(medium) {
+			font-size: 80%;
+		}
+	}
+
+
+
+
+//::: BASE FONT SETTINGS ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+	body {
+		@include sans();
+		font-size: 14px; // base font size
+		letter-spacing: .01em; // most fonts look better opened up just a little, you can adjust the value
+		@include breakpoint(medium) {
+			font-size: 16px;
+		}
+		@include breakpoint(large) {
+			font-size: 18px;
+		}
+		font-weight: 300;
+		line-height: 1.5;
+	}
+
+	// general
+	em {
+		font-style: italic;
+	}
+	strong {
+		font-weight: 900;
+	}
+	p {
+		margin-bottom: 1.5em;
+	}
+
+
+/*--- Links ---*/
+
+	a:link, a:visited { text-decoration: none; }
+	a:hover, a:active, a:focus { text-decoration: none; }
+
+
+/*--- Headings ---*/
+
+	// add default sizes and vertical spacing
+
+	h1, h2, h3, h4, h5, h6 {
+		clear: both; // this is needed for headings between floated content areas
+		line-height: 1;
+		margin-bottom: 1.5em;
+	}
+	
+	h1 {
+		@include large-type();
+	}
+	h2 {
+		@include medium-type();
+	}
+	h4 {
+		font-weight: bold;
+	}
+
+
+
+
+
