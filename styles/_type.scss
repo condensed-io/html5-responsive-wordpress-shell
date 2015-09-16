@@ -89,12 +89,6 @@
 		@include sans();
 		font-size: 14px; // base font size
 		letter-spacing: .01em; // most fonts look better opened up just a little, you can adjust the value
-		@include breakpoint(medium) {
-			font-size: 16px;
-		}
-		@include breakpoint(large) {
-			font-size: 18px;
-		}
 		font-weight: 300;
 		line-height: 1.5;
 	}
