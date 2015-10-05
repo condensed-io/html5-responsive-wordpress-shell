@@ -90,21 +90,24 @@ THIS SHEET IS FOR SITEWIDE STYLES RELATED TO:
 
 /* ::: CONTENT ::::::::::::::::::::::::::::::::: */
 
-		// Tags
-		a[rel="tag"] {
-			display: inline-block;
-			padding: .1em .5em;
-			margin: .2em;
-			border-radius: .3em;
-			background: $lighter-grey;
-			&:link, &:visited {
-				text-decoration: none;
-			}
-			&:hover, &:active, &:focus {
-				background: $orange;
-				color: $white;
-			}
-		}
+    // Tags
+    a[rel="tag"],
+    .tags a {
+        padding: .75em 1em;
+        white-space: nowrap;
+        vertical-align: middle;
+        margin: .2em;
+        border-radius: .3em;
+        background: $lighter-grey;
+        &:link, &:visited {
+            text-decoration: none;
+            font-color: dark-grey;
+        }
+        &:hover, &:active, &:focus {
+            background: $orange;
+            color: $white;
+        }
+    }
 
 
 /* ::: COMMENTS ::::::::::::::::::::::::::::::::: */
